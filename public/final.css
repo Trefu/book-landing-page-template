@@ -4218,7 +4218,7 @@ video {
 }
 
 .bg-svg-bg {
-  background-image: url('/public/assets/background.svg');
+  background-image: url('/assets/background.svg');
 }
 
 .from-transparent {
