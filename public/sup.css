@@ -51,7 +51,3 @@ a:hover::before {
   align-items: center;
   justify-content: center;
 }
-
-.title h1 {
-  font-size: larger;
-}
