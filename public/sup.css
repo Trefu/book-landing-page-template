@@ -1,0 +1,57 @@
+a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". ."
+    "Book Frase"
+    ". .";
+}
+.Book {
+  grid-area: Book;
+  background-color: rgba(255, 0, 0, 0.229);
+  width: 100%;
+  height: auto;
+}
+.Frase {
+  grid-area: Frase;
+  grid-area: Frase;
+  background-color: rgba(0, 0, 255, 0.228);
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: larger;
+}
