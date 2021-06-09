@@ -1,3 +1,6 @@
+body {
+  font-family: "Mate SC", serif;
+}
 a {
   position: relative;
   color: rgb(255, 255, 255);
@@ -23,18 +26,13 @@ a:hover::before {
 }
 
 #title {
-  font-family: "Mate SC", serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 65px;
-  background: #d2d1ef;
-  box-shadow: 29px 29px 54px #7a798b, -29px -29px 54px #ffffff;
-
-  width: 100%;
+  font-family: "Dancing Script", cursive;
+  border-radius: 40px;
+  background: #bba9f087;
+  box-shadow: 29px 29px 54px #898b79, -29px -29px 54px #ffffff;
 }
 
-#main {
+#headerPrincipal {
   background: url("/public/assets/bgInk.jpg");
   background-repeat: no-repeat;
   background-size: cover;

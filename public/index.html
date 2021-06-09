@@ -10,7 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
       rel="stylesheet"
     />
-    <link href="final.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="tailwind.css" rel="stylesheet" />
     <link href="sup.css" rel="stylesheet" />
   </head>
   <body>
@@ -32,11 +37,27 @@
         text-lg
       "
     >
-      <span class="hidden md:inline-block text-yellow-400 py-2"
-        >Mirtha Gladys Álvarez</span
+      <a href="#" class="text-2xl hidden md:inline-block text-yellow-300 py-2"
+        >Mirtha Gladys Álvarez</a
       >
       <nav>
-        <ul class="md:flex">
+        <div class="flex pb-4 justify-end md:hidden">
+          <button id="toggleBtn">
+            <img
+              class="toggle block"
+              src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
+              width="40"
+              height="40"
+            />
+            <img
+              class="toggle hidden"
+              src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
+              width="40"
+              height="40"
+            />
+          </button>
+        </div>
+        <ul class="md:flex toggle hidden">
           <li class="md:ml-4">
             <a class="block hover:bg-indigo-900 py-2 md:px-2" href="#"> Bio </a>
           </li>
@@ -61,7 +82,7 @@
 
     <main>
       <header
-        id="main"
+        id="headerPrincipal"
         class="
           flex flex-col
           justify-center
@@ -70,38 +91,14 @@
           h-screen
         "
       >
-        <!--         <div
-          class="
-            Book
-            flex
-            justify-center
-            col-end-auto
-            md:col-start-1 md:col-end-3
-            text-center
-          "
-        >
-          <img src="/public/assets/bookexample.png" alt="" />
-        </div> -->
         <div class="items-center">
-          <h1
-            id="title"
-            class="
-              text-4xl
-              md:text-5x1
-              lg:text-7xl
-              text-indigo-700
-              font-bold
-              px-5
-            "
-          >
+          <h1 id="title" class="text-3xl md:text-4xl lg:text-6xl p-5">
             Tus huellas sobre mi tinta
           </h1>
         </div>
       </header>
     </main>
     <footer></footer>
-    <script>
-      const a = () => console.log("ASD");
-    </script>
+    <script type="text/javascript" src="/public/scripts.js"></script>
   </body>
 </html>

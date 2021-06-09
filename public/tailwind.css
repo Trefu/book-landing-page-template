@@ -4218,7 +4218,7 @@ video {
 }
 
 .bg-svg-bg {
-  background-image: url('/assets/background.svg');
+  background-image: url('assets/bgInk.jpg');
 }
 
 .from-transparent {
@@ -33475,7 +33475,7 @@ video {
   }
 
   .sm\:bg-svg-bg {
-    background-image: url('/public/assets/background.svg');
+    background-image: url('assets/bgInk.jpg');
   }
 
   .sm\:from-transparent {
@@ -62597,7 +62597,7 @@ video {
   }
 
   .md\:bg-svg-bg {
-    background-image: url('/public/assets/background.svg');
+    background-image: url('assets/bgInk.jpg');
   }
 
   .md\:from-transparent {
@@ -91719,7 +91719,7 @@ video {
   }
 
   .lg\:bg-svg-bg {
-    background-image: url('/public/assets/background.svg');
+    background-image: url('assets/bgInk.jpg');
   }
 
   .lg\:from-transparent {
@@ -120841,7 +120841,7 @@ video {
   }
 
   .xl\:bg-svg-bg {
-    background-image: url('/public/assets/background.svg');
+    background-image: url('assets/bgInk.jpg');
   }
 
   .xl\:from-transparent {
@@ -149963,7 +149963,7 @@ video {
   }
 
   .\32xl\:bg-svg-bg {
-    background-image: url('/public/assets/background.svg');
+    background-image: url('assets/bgInk.jpg');
   }
 
   .\32xl\:from-transparent {
