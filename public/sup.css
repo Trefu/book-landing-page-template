@@ -22,32 +22,21 @@ a:hover::before {
   transform: scaleX(1);
 }
 
-.grid-container {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  grid-template-rows: 1fr 3fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    ". ."
-    "Book Frase"
-    ". .";
-}
-.Book {
-  grid-area: Book;
-  background-color: rgba(255, 0, 0, 0.229);
-  width: 100%;
-  height: auto;
-}
-.Frase {
-  grid-area: Frase;
-  grid-area: Frase;
-  background-color: rgba(0, 0, 255, 0.228);
-  width: 100%;
-}
-
-.title {
+#title {
+  font-family: "Mate SC", serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 65px;
+  background: #d2d1ef;
+  box-shadow: 29px 29px 54px #7a798b, -29px -29px 54px #ffffff;
+
+  width: 100%;
+}
+
+#main {
+  background: url("/public/assets/bgInk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
