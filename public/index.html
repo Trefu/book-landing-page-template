@@ -18,66 +18,79 @@
     <link href="tailwind.css" rel="stylesheet" />
     <link href="sup.css" rel="stylesheet" />
   </head>
+  <!-- 
+
+  -->
   <body>
-    <header
-      class="
-        sticky
-        top-0
-        bg-indigo-900
-        md:flex
-        md:justify-between
-        p-4
-        pb-0
-        shadow-lg
-        md:pb-4
-        text-indigo-100
-        font-semibold
-        md:font-bold
-        text-lg
-      "
-    >
-      <a href="#" class="text-2xl hidden md:inline-block text-yellow-300 py-2"
+    <nav class="sticky top-0 md:flex justify-between bg-indigo-800">
+      <div class="flex justify-end md:hidden">
+        <!-- 
+    
+  -->
+        <button
+          id="toggleBtn"
+          class="focus:outline-none focus:ring-1 focus:ring-indigo-400 m-2"
+        >
+          <img
+            class="toggle block"
+            src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
+            width="40"
+            height="40"
+          />
+          <img
+            class="toggle hidden"
+            src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
+            width="40"
+            height="40"
+          />
+        </button>
+      </div>
+      <!-- 
+    
+  -->
+
+      <a
+        href="#"
+        class="ml-4 text-2xl hidden md:inline-block text-yellow-300 py-4"
         >Mirtha Gladys Álvarez</a
       >
-      <nav>
-        <div class="flex justify-end md:hidden">
-          <button id="toggleBtn">
-            <img
-              class="toggle block outline-none pb-2"
-              src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
-              width="40"
-              height="40"
-            />
-            <img
-              class="toggle hidden"
-              src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
-              width="40"
-              height="40"
-            />
-          </button>
-        </div>
-        <ul class="md:flex toggle hidden">
-          <li class="md:ml-4">
-            <a class="block hover:bg-indigo-900 py-2 md:px-2" href="#"> Bio </a>
-          </li>
-          <li class="md:ml-4">
-            <a class="block hover:bg-indigo-900 py-2 md:px-2" href="#">
-              Sobre
-            </a>
-          </li>
-          <li class="md:ml-4">
-            <a class="block hover:bg-indigo-900 py-2 md:px-2" href="#">
-              Escritores
-            </a>
-          </li>
-          <li class="md:ml-4">
-            <a class="block hover:bg-indigo-900 py-2 md:px-2" href="#">
-              Contacto
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+
+      <ul
+        id="mobileMenu"
+        class="
+          absolute
+          md:static
+          w-screen
+          md:w-auto
+          origin-top
+          scale-y-0
+          duration-300
+          md:flex
+          px-4
+          py-0
+          md:py-4
+          text-indigo-100
+          font-semibold
+          md:font-bold
+          bg-indigo-800
+          md:transform-none
+          transform
+        "
+      >
+        <li class="md:ml-4">
+          <a class="block py-2 md:px-2" href="#"> Bio </a>
+        </li>
+        <li class="md:ml-4">
+          <a class="block py-2 md:px-2" href="#"> Sobre </a>
+        </li>
+        <li class="md:ml-4">
+          <a class="block py-2 md:px-2" href="#"> Escritores </a>
+        </li>
+        <li class="md:ml-4">
+          <a class="block py-2 md:px-2" href="#"> Contacto </a>
+        </li>
+      </ul>
+    </nav>
 
     <main>
       <header
@@ -88,6 +101,8 @@
           items-center
           bg-svg-bg bg-indigo-300 bg-no-repeat bg-cover
           h-screen
+          filter
+          greyscale
         "
       >
         <div class="items-center">

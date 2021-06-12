@@ -10,6 +10,9 @@ a {
   text-decoration: none;
 }
 
+:focus {
+  outline: none;
+}
 a::before {
   content: "";
   position: absolute;
@@ -45,4 +48,9 @@ a:hover::before {
 
 #test {
   font-family: "Dancing Script";
+}
+
+img {
+  border: none;
+  outline: none;
 }
