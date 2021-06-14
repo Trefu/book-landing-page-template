@@ -4,7 +4,10 @@
 body {
   font-family: "Mate SC", serif;
 }
-a {
+#navbar {
+  z-index: 100;
+}
+li > a {
   position: relative;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -13,7 +16,7 @@ a {
 :focus {
   outline: none;
 }
-a::before {
+li > a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -26,31 +29,32 @@ a::before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover::before {
+li > a:hover::before {
   visibility: visible;
   transform: scaleX(1);
-}
-
-#title {
-  font-family: "Dancing Script", cursive;
-  border-radius: 40px;
-  background: #bba9f087;
-  box-shadow: 29px 29px 54px #898b79, -29px -29px 54px #ffffff;
 }
 
 #headerPrincipal {
   background: url("./assets/backgroundImage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  height: 100vh;
 }
 
 #test {
   font-family: "Dancing Script";
 }
 
-img {
-  border: none;
-  outline: none;
+#title {
+  font-family: "Dancing Script", cursive;
+  background: rgba(0, 0, 0, 0.235);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#portada {
+  box-shadow: 41px 38px 43px 48px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 41px 38px 43px 48px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 41px 38px 43px 48px rgba(0, 0, 0, 0.6);
 }

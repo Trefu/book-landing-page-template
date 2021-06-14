@@ -18,40 +18,43 @@
     <link href="tailwind.css" rel="stylesheet" />
     <link href="sup.css" rel="stylesheet" />
   </head>
-  <!-- 
 
-  -->
   <body>
-    <nav class="sticky top-0 md:flex justify-between bg-indigo-800">
+    <nav id="navbar" class="sticky top-0 md:flex justify-between bg-black">
       <div class="flex justify-end md:hidden">
-        <!-- 
-    
-  -->
         <button
           id="toggleBtn"
-          class="focus:outline-none focus:ring-1 focus:ring-indigo-400 m-2"
+          class="focus:outline-none focus:ring-1 focus:ring-white p-2 m-2"
         >
           <img
             class="toggle block"
-            src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
-            width="40"
-            height="40"
+            src="./assets/Open.png"
+            width="35"
+            height="35"
           />
           <img
             class="toggle hidden"
-            src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
-            width="40"
-            height="40"
+            src="./assets/Close.png"
+            width="35"
+            height="35"
           />
         </button>
       </div>
-      <!-- 
-    
-  -->
 
       <a
-        href="#"
-        class="ml-4 text-2xl hidden md:inline-block text-yellow-300 py-4"
+        href="#headerPrincipal"
+        class="
+          ml-4
+          text-2xl
+          hidden
+          md:inline-block
+          text-yellow-300
+          transition
+          duration-600
+          ease-in
+          hover:text-white
+          py-4
+        "
         >Mirtha Gladys Álvarez</a
       >
 
@@ -72,22 +75,74 @@
           text-indigo-100
           font-semibold
           md:font-bold
-          bg-indigo-800
+          bg-black
           md:transform-none
           transform
         "
       >
         <li class="md:ml-4">
-          <a class="block py-2 md:px-2" href="#"> Bio </a>
+          <a
+            class="
+              block
+              py-2
+              md:px-2
+              transition
+              duration-300
+              ease-in
+              hover:text-yellow-300
+            "
+            href="#bio"
+          >
+            Bio
+          </a>
         </li>
         <li class="md:ml-4">
-          <a class="block py-2 md:px-2" href="#"> Sobre </a>
+          <a
+            class="
+              block
+              py-2
+              md:px-2
+              transition
+              duration-300
+              ease-in
+              hover:text-yellow-300
+            "
+            href="#sobre"
+          >
+            Sobre
+          </a>
         </li>
         <li class="md:ml-4">
-          <a class="block py-2 md:px-2" href="#"> Escritores </a>
+          <a
+            class="
+              block
+              py-2
+              md:px-2
+              transition
+              duration-300
+              ease-in
+              hover:text-yellow-300
+            "
+            href="#poemas"
+          >
+            Poemas
+          </a>
         </li>
         <li class="md:ml-4">
-          <a class="block py-2 md:px-2" href="#"> Contacto </a>
+          <a
+            class="
+              block
+              py-2
+              md:px-2
+              transition
+              duration-300
+              ease-in
+              hover:text-yellow-300
+            "
+            href="#contacto"
+          >
+            Contacto
+          </a>
         </li>
       </ul>
     </nav>
@@ -95,25 +150,105 @@
     <main>
       <header
         id="headerPrincipal"
-        class="
-          flex flex-col
-          justify-center
-          items-center
-          bg-svg-bg bg-indigo-300 bg-no-repeat bg-cover
-          h-screen
-          filter
-          greyscale
-        "
+        class="min-h-screen flex flex-col justify-center md:flex-row py-5"
       >
-        <div class="items-center">
-          <h1 id="title" class="text-3xl md:text-4xl lg:text-8xl p-5">
+        <div class="container mx-auto flex flex-col md:flex-row text-center">
+          <h1
+            id="title"
+            class="
+              text-yellow-400
+              self-center
+              text-4xl
+              md:text-6xl
+              lg:text-8xl
+              p-5
+              md:mr-4
+            "
+          >
             Tus huellas en mi tinta
           </h1>
+          <div class="flex justify-center md:auto w-4/5 mx-auto mt-5 md:my-0">
+            <img
+              id="portada"
+              class="rounded-lg"
+              src="./assets/portada.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </header>
-      <div class="bg-indigo-400 text-center p-5 m-5 text-3xl">
-        <p id="test"></p>
-      </div>
+
+      <section>
+        <div
+          id="sobre"
+          class="text-center flex flex-col mx-auto py-5 bg-black text-white"
+        >
+          <h1 class="text-3xl py-5">
+            <strong><u>Sobre</u></strong>
+          </h1>
+          <p class="py-5 container mx-auto w-4/5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            ratione odio assumenda repudiandae officia at minus voluptate
+            consectetur quos quia ad repellendus esse tempore quisquam,
+            corrupti, tempora debitis exercitationem libero. Ducimus officia
+            ipsam adipisci unde ad animi provident, voluptatibus incidunt vel?
+            Architecto perspiciatis corporis tempore, beatae alias illo tempora
+            vero suscipit id unde quibusdam quasi voluptate quos ab adipisci
+            iure. Aliquam ab dignissimos in quo assumenda, earum voluptatibus
+            obcaecati ad atque recusandae repudiandae nemo dolorem deleniti
+            cupiditate quasi modi dolor iste et maxime deserunt. Sunt deleniti
+            praesentium ab aliquam ullam! Possimus asperiores ea voluptate!
+            Dolorem aliquam nihil suscipit debitis aut laudantium doloremque
+            rerum neque voluptates distinctio culpa reiciendis laboriosam, ab
+            labore accusamus ducimus numquam dolor nemo quibusdam? Nobis, quod
+            voluptatem. Quam reiciendis, itaque quo corporis harum, commodi
+            cupiditate quia assumenda corrupti, repellendus consectetur iusto
+            molestiae vel ex nobis repellat unde hic? Vero dignissimos nisi
+            recusandae ducimus, debitis eaque ab veritatis. Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Quam, eos et hic
+            consequuntur fuga inventore voluptates doloribus sed veritatis
+            perspiciatis, nulla omnis, rem molestias nihil nostrum officiis
+            voluptate obcaecati placeat. Eius est minima quae quos unde
+            laboriosam tenetur ad ut quod beatae veritatis nemo delectus
+            asperiores quis officiis ratione, illum quia obcaecati molestiae
+            perspiciatis aliquam iure modi, nesciunt minus? Sint. Magnam maiores
+            consequatur tempore repellendus animi quasi officia reiciendis est,
+            officiis eveniet non inventore molestias et beatae consectetur
+            debitis exercitationem perferendis quia, soluta cumque sequi
+            nesciunt impedit. Corrupti, mollitia impedit! Incidunt maxime nisi,
+            officiis sint accusantium quae sapiente voluptatum nesciunt eius
+            cum. Voluptatum provident magni eveniet vero cumque facilis rerum
+            consequatur voluptatibus. Non odio incidunt perspiciatis deleniti.
+            Corrupti, est autem? Laudantium enim in libero quibusdam asperiores
+            nam, facilis exercitationem explicabo eum. Quisquam quam, natus
+            asperiores ipsa minima voluptatibus eius consequuntur quo assumenda
+            error odio itaque unde sunt! Magni, pariatur maxime. Modi veniam
+            tenetur velit possimus quasi ex consequuntur quos, rem dicta eos
+            inventore illum quibusdam odio cum illo numquam beatae tempora,
+            animi voluptate! Placeat ad nisi, numquam doloribus maxime vitae!
+            Incidunt consequatur impedit beatae alias tempore, sit eos nesciunt
+            eum tempora quis cupiditate minima, cum modi ex distinctio commodi.
+            Odio vel beatae itaque nemo alias vitae consectetur nostrum fugiat
+            provident. Odio natus rem molestias quasi deleniti ducimus. Fuga, et
+            qui voluptatem optio, inventore odio molestias maiores ipsam illo,
+            quis rerum magni perspiciatis nostrum sint recusandae id sit facere
+            nobis natus. Hic excepturi, possimus quidem aspernatur eos at
+            expedita impedit quod itaque dolores quibusdam esse ab deleniti
+            totam qui officia voluptatem distinctio. Quas necessitatibus quidem
+            praesentium ad minus illum fugit et. Officia nulla tenetur natus
+            libero deleniti optio aut commodi tempore inventore id? Maiores
+            minus esse nostrum velit eaque, eveniet quos aliquam expedita fugiat
+            mollitia illo ullam modi cupiditate molestiae nisi!
+          </p>
+        </div>
+      </section>
+      <!--       <section id="poemas">
+        <div class="text-center flex flex-col container mx-auto py-5">
+          <h1 class="text-3xl py-5">
+            <strong><u>Poemas</u></strong>
+          </h1>
+        </div>
+      </section> -->
     </main>
     <footer></footer>
     <script type="text/javascript" src="./scripts.js"></script>

@@ -1,5 +1,6 @@
 const toggleBtn = document.getElementById("toggleBtn");
 const mobileMenu = document.getElementById("mobileMenu");
+const PORTADA_COLOR_BG = "#383838";
 /* 
 toggleBtn.onclick = function toggleMenu() {
   const navToggle = document.getElementsByClassName("toggle");
@@ -43,9 +44,3 @@ conociendo personajes suben duendes a babor\n
 trazando el desnivel para llegar hasta "Rey"\n
 tu tesoro de papel!!!\n
 `;
-
-window.onload = () => {
-  console.log("pag cargada");
-  var poemaNodo = document.getElementById("test");
-  poemaNodo.textContent = AJEDREZ_POEMA;
-};
