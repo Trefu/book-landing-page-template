@@ -37,7 +37,8 @@ li > a:hover::before {
 #headerPrincipal {
   background: url("./assets/backgroundImage.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+
+  background-attachment: fixed;
 }
 
 #test {
@@ -57,4 +58,11 @@ li > a:hover::before {
   box-shadow: 41px 38px 43px 48px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 41px 38px 43px 48px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 41px 38px 43px 48px rgba(0, 0, 0, 0.6);
+}
+
+.separador {
+  background: url("./assets/backgroundImage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }

@@ -150,9 +150,9 @@
     <main>
       <header
         id="headerPrincipal"
-        class="min-h-screen flex flex-col justify-center md:flex-row py-5"
+        class="min-h-screen flex flex-col justify-center py-5"
       >
-        <div class="container mx-auto flex flex-col md:flex-row text-center">
+        <div class="container mx-auto flex flex-col lg:flex-row text-center">
           <h1
             id="title"
             class="
@@ -167,7 +167,7 @@
           >
             Tus huellas en mi tinta
           </h1>
-          <div class="flex justify-center md:auto w-4/5 mx-auto mt-5 md:my-0">
+          <div class="flex justify-center md:auto w-4/5 mx-auto mt-5 lg:my-0">
             <img
               id="portada"
               class="rounded-lg"
@@ -178,15 +178,12 @@
         </div>
       </header>
 
-      <section>
-        <div
-          id="sobre"
-          class="text-center flex flex-col mx-auto py-5 bg-black text-white"
-        >
-          <h1 class="text-3xl py-5">
+      <section id="sobre">
+        <div class="text-center flex flex-col mx-auto py-5 bg-black text-white">
+          <h1 class="text-4xl py-5">
             <strong><u>Sobre</u></strong>
           </h1>
-          <p class="py-5 container mx-auto w-4/5">
+          <p class="text-2xl y-5 container mx-auto md:w-4/5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
             ratione odio assumenda repudiandae officia at minus voluptate
             consectetur quos quia ad repellendus esse tempore quisquam,
@@ -242,6 +239,7 @@
           </p>
         </div>
       </section>
+      <div class="separador py-52 filter grayscale"></div>
       <!--       <section id="poemas">
         <div class="text-center flex flex-col container mx-auto py-5">
           <h1 class="text-3xl py-5">
@@ -249,6 +247,17 @@
           </h1>
         </div>
       </section> -->
+      <section id="poemas" class="bg-black">
+        <div class="flex flex-col text-white items-center container mx-auto">
+          <h1 class="text-4xl py-10">Poemas</h1>
+          <div class="flex flex-wrap justify-center">
+            <img src="./assets/poems/abrazame.jpg" alt="" />
+            <img src="./assets/poems/abrazame.jpg" alt="" />
+            <img src="./assets/poems/abrazame.jpg" alt="" />
+            <img src="./assets/poems/abrazame.jpg" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script type="text/javascript" src="./scripts.js"></script>
