@@ -20,14 +20,19 @@ toggleBtn.addEventListener("click", () => {
   }
   mobileMenu.classList.toggle("transform");
 });
-/* 
-const initAnimation = (el) => {
+
+const init = () => {
+  const body = document.body;
+  body.classList.remove("overflow-hidden");
+  const loader = document.getElementById("loading");
+  loader.remove();
   setTimeout(() => {
-    el.classList.add("text-white");
-    el.textContent = "Test";
-  }, 2000);
+    VERSE_HEADER.classList.add("text-white");
+    VERSE_HEADER.textContent = "Test";
+  }, 4000);
 };
-document.onload = initAnimation(VERSE_HEADER); */
+document.onload = init();
+
 /* const AJEDREZ_POEMA = `Apasionante juego tal vez como el desafiante Ajedrez!!\n
 decidida pujante un paso atrás otro para adelante!\n
 Empuñando finas letras, temiendo fueran arrebatar.\n
