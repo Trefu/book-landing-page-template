@@ -35,9 +35,9 @@ li > a:hover::before {
 }
 
 #headerPrincipal {
-  background: url("./assets/backgroundImage.jpg");
+  background: url("./assets/backgorundink.jpg");
   background-repeat: no-repeat;
-
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -45,7 +45,8 @@ li > a:hover::before {
   font-family: "Dancing Script";
 }
 
-#title {
+#verseContainer,
+h1 {
   font-family: "Dancing Script", cursive;
   background: rgba(0, 0, 0, 0.235);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -54,18 +55,10 @@ li > a:hover::before {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-#portada {
-  box-shadow: 41px 38px 43px 48px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: 41px 38px 43px 48px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 41px 38px 43px 48px rgba(0, 0, 0, 0.6);
-}
 
 .separador {
-  background: url("./assets/backgroundImage.jpg");
+  background: url("./assets/backgorundink.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.author-image {
 }

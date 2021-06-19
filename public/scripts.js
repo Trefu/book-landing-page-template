@@ -1,6 +1,7 @@
 const toggleBtn = document.getElementById("toggleBtn");
 const mobileMenu = document.getElementById("mobileMenu");
-const PORTADA_COLOR_BG = "#383838";
+const VERSE_HEADER = document.getElementById("verse");
+
 /* 
 toggleBtn.onclick = function toggleMenu() {
   const navToggle = document.getElementsByClassName("toggle");
@@ -19,8 +20,15 @@ toggleBtn.addEventListener("click", () => {
   }
   mobileMenu.classList.toggle("transform");
 });
-
-const AJEDREZ_POEMA = `Apasionante juego tal vez como el desafiante Ajedrez!!\n
+/* 
+const initAnimation = (el) => {
+  setTimeout(() => {
+    el.classList.add("text-white");
+    el.textContent = "Test";
+  }, 2000);
+};
+document.onload = initAnimation(VERSE_HEADER); */
+/* const AJEDREZ_POEMA = `Apasionante juego tal vez como el desafiante Ajedrez!!\n
 decidida pujante un paso atrás otro para adelante!\n
 Empuñando finas letras, temiendo fueran arrebatar.\n
 Por años cobijando ese tesoro en papel que "lindoslocosrecuerdos" saben entender...\n
@@ -43,4 +51,4 @@ con coraje y solo un lápiez de equipaje\n
 conociendo personajes suben duendes a babor\n
 trazando el desnivel para llegar hasta "Rey"\n
 tu tesoro de papel!!!\n
-`;
+`; */

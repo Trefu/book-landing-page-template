@@ -150,32 +150,16 @@
     <main>
       <header
         id="headerPrincipal"
-        class="min-h-screen flex flex-col justify-center py-5"
+        class="min-h-screen flex flex-col justify-center"
       >
-        <div class="container mx-auto flex flex-col lg:flex-row text-center">
+        <div id="verseContainer" class="container mx-auto text-center">
           <h1
-            id="title"
-            class="
-              text-yellow-400
-              self-center
-              text-4xl
-              md:text-6xl
-              lg:text-8xl
-              p-5
-              md:mr-4
-            "
+            id="verse"
+            class="transform ease-in-out text-yellow-400 text-4xl md:text-6xl lg:text-8xl p-5 transition duration-1000"
           >
-            Tus huellas en mi tinta
+            Palabras que corren por mis venas y a gritos piden escapar
           </h1>
-          <div class="flex justify-center md:auto w-4/5 mx-auto mt-5 lg:my-0">
-            <img
-              id="portada"
-              class="rounded-lg"
-              src="./assets/portada.jpg"
-              alt="Portada del poemario"
-            />
-          </div>
-        </div>
+
       </header>
 
       <section id="sobre">
@@ -209,10 +193,12 @@
                 float-none
                 md:float-left
                 md:mr-5
-                max-h-96
                 author-image
+                pb-10
+                md:pb-0
+                max-h-80
               "
-              src="./assets/autor.jpg"
+              src="./assets/portada.png"
               alt="Imagen de la autora del poemario"
             />
             <p class="text-left lg:text-lg px-5">
