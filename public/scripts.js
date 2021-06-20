@@ -21,15 +21,26 @@ toggleBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("transform");
 });
 
-const init = () => {
-  const body = document.body;
-  body.classList.remove("overflow-hidden");
-  const loader = document.getElementById("loading");
-  loader.remove();
+const fadeOutHeader = () => {
   setTimeout(() => {
-    VERSE_HEADER.classList.add("text-white");
-    VERSE_HEADER.textContent = "Test";
-  }, 4000);
+    VERSE_HEADER.classList.add("opacity-0");
+    setTimeout(() => {
+      VERSE_HEADER.textContent =
+        '" Produciendo una veta en ellas y a la tinta al fin llegar "';
+      VERSE_HEADER.classList.toggle("opacity-0");
+    }, 1000);
+  }, 6500);
+};
+
+const init = () => {
+  setTimeout(() => {
+    const body = document.body;
+    body.classList.remove("overflow-hidden");
+    const loader = document.getElementById("loading");
+    loader.remove();
+
+    fadeOutHeader();
+  }, 1000);
 };
 document.onload = init();
 

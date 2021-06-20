@@ -1,52 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tus huellas sobre mi Tinta</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="tailwind.css" rel="stylesheet" />
-    <link href="sup.css" rel="stylesheet" />
-  </head>
 
-  <body class="overflow-hidden">
-    <div id="loading" class=" flex  justify-center items-center bg-black overflow-hidden ">
-      <div class="flex justify-center items-center loader "></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tus huellas sobre mi Tinta</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link href="tailwind.css" rel="stylesheet" />
+  <link href="sup.css" rel="stylesheet" />
+</head>
+
+<body class="overflow-hidden">
+  <div id="loading" class=" flex  justify-center items-center bg-black overflow-hidden ">
+    <div class="flex justify-center items-center loader "></div>
+  </div>
+  <nav id="navbar" class="z-50 sticky top-0 md:flex justify-between bg-black">
+    <div class="flex justify-end md:hidden">
+      <button id="toggleBtn" class="focus:outline-none focus:ring-1 focus:ring-white p-2 m-2">
+        <img class="toggle block" src="./assets/Open.png" width="35" height="35" />
+        <img class="toggle hidden" src="./assets/Close.png" width="35" height="35" />
+      </button>
     </div>
-    <nav id="navbar" class="z-50 sticky top-0 md:flex justify-between bg-black">
-      <div class="flex justify-end md:hidden">
-        <button
-          id="toggleBtn"
-          class="focus:outline-none focus:ring-1 focus:ring-white p-2 m-2"
-        >
-          <img
-            class="toggle block"
-            src="./assets/Open.png"
-            width="35"
-            height="35"
-          />
-          <img
-            class="toggle hidden"
-            src="./assets/Close.png"
-            width="35"
-            height="35"
-          />
-        </button>
-      </div>
 
-      <a
-        href="#headerPrincipal"
-        class="
+    <a href="#headerPrincipal" class="
           ml-4
           text-2xl
           hidden
@@ -57,13 +37,9 @@
           ease-in
           hover:text-white
           py-4
-        "
-        >Mirtha Gladys Álvarez</a
-      >
+        ">Mirtha Gladys Álvarez</a>
 
-      <ul
-        id="mobileMenu"
-        class="
+    <ul id="mobileMenu" class="
           absolute
           md:static
           w-screen
@@ -81,11 +57,9 @@
           bg-black
           md:transform-none
           transform
-        "
-      >
-        <li class="md:ml-4">
-          <a
-            class="
+        ">
+      <li class="md:ml-4">
+        <a class="
               block
               py-2
               md:px-2
@@ -93,15 +67,12 @@
               duration-300
               ease-in
               hover:text-yellow-300
-            "
-            href="#bio"
-          >
-            Bio
-          </a>
-        </li>
-        <li class="md:ml-4">
-          <a
-            class="
+            " href="#">
+          Inicio
+        </a>
+      </li>
+      <li class="md:ml-4">
+        <a class="
               block
               py-2
               md:px-2
@@ -109,15 +80,12 @@
               duration-300
               ease-in
               hover:text-yellow-300
-            "
-            href="#sobre"
-          >
-            Sobre
-          </a>
-        </li>
-        <li class="md:ml-4">
-          <a
-            class="
+            " href="#sobre">
+          Sobre
+        </a>
+      </li>
+      <li class="md:ml-4">
+        <a class="
               block
               py-2
               md:px-2
@@ -125,148 +93,125 @@
               duration-300
               ease-in
               hover:text-yellow-300
-            "
-            href="#poemas"
-          >
-            Poemas
-          </a>
-        </li>
-        <li class="md:ml-4">
-          <a
-            class="
-              block
+            " href="#poemas">
+          Poemas
+        </a>
+      </li>
+      <li class="md:ml-4">
+        <a class="block
               py-2
               md:px-2
               transition
               duration-300
               ease-in
               hover:text-yellow-300
-            "
-            href="#contacto"
-          >
-            Contacto
-          </a>
-        </li>
-      </ul>
-    </nav>
+            " href="#contacto">
+          Contacto
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-    <main>
-      <header
-        id="headerPrincipal"
-        class="min-h-screen flex flex-col justify-center"
-      >
-        <div id="verseContainer" class="container mx-auto text-center">
-          <h1
-            id="verse"
-            class="transform ease-in-out text-yellow-500 text-4xl md:text-6xl lg:text-8xl p-5 transition duration-1000"
-          >
-            Palabras que corren por mis venas y a gritos piden escapar
-          </h1>
+  <main>
+    <header id="headerPrincipal" class="min-h-screen flex flex-col justify-center">
+      <div id="verseContainer" class="container mx-auto text-center">
+        <h1 id="verse" class="duration-1000 transform ease-in-out text-white text-4xl md:text-6xl lg:text-8xl p-5">
+          " Palabras que corren por mis venas y a gritos piden escapar "
+        </h1>
 
-      </header>
-
-      <section id="sobre">
-        <div
-          class="
-            py-20
-            text-center
+    </header>
+<hr>
+    <section id="sobre">
+      <div class="
+      py-5
+                        text-center
             flex flex-col
             justify-center
             min-h-screen
             bg-black
             text-white
-          "
-        >
-          <h1 class="text-6xl md:text-6xl pb-10">
-            <strong>Sobre</strong>
-          </h1>
-          <div
-            class="
+                      ">
+        <h1 class="text-4xl md:text-6xl ">
+          <strong>Sobre</strong>
+        </h1>
+      
+        <div class="
               flex flex-col
-              md:flex-row
+              lg:flex-row
               justify-center
-              container
+              md:container
               mx-auto
               md:text-left
-            "
-          >
-            <img
-              class="
-                self-center
-                float-none
-                md:float-left
-                md:mr-5
-                author-image
-                pb-10
-                md:pb-0
-                max-h-80
-              "
-              src="./assets/portada.png"
-              alt="Imagen de la autora del poemario"
-            />
-            <div>
-              <p class="text-left lg:text-lg px-5">
-                Este libro  fue construido de un conjunto  de   Poesías escritas que en el tiempo guardadas estaban durante años
-                Y en este 2020 la decisión de editarlas en un poemario! Digital  con el cuál  fueron fluyendo poemas en su trayecto y así  completar  con éxito  las elegidas poesías para este ejemplar!
-                E aquí una que identifica su existir!
-              </p>
-              <br>
-              <p class="px-5 text-left sobre-poem text-sm md:text-2xl">“Ajedrez”
-                apasionante  juego  tal vez como el desafiante Ajedrez .!!
-                decidida  pujante  un paso a tras otro adelante!
-                Empuñando  finas letras , temiendo  fueran arrebatar ...
-                Por años cobijando  ese tesoro  en papel que
-                “lindoslocoscuerdos “  saben entender...
-                caminando en aventuras tratando de revelar aquella noble escritura que lograste publicar .
-                sobre un pequeño libro de cuetos ,Hadas ,fantasías y más...
-                sueños majestuosos para contar . 
-                metióse la aventura  cómo arañas en telar...
-                 al cuento entretejiendo,
-                compartiendo los momentos desafiando  esa misión!!! 
-                Desvelados por las noches ,palpitados recuerdos ...
-                 sosteniendo fuerte el timón!
-                 Cómo el arca de Noé,
-                llevando especies de gran valor .. 
-                metida entre las viñas
-                recibiendo uvas frescas 
-                compartiendo el honor sellando antologías publicadas con pasión  sopla el viento ...
-                abren velas...
-                 Zarpa el barco ...
-                el viaje  empieza  ...
-                con  coraje y solo un lápiz de equipaje 
-                conociendo personajes  suben duendes  a babor ....
-                trazando el desnivel    para llegar  hasta “Rey” 
-                tu tesoro de papel !!!
-                
-                Por:Mirtha Gladys Alvarez”
-                Bs.As
-                Argentina</p>
-            </div>
-            
-          </div>
+              items-center
+                         ">
+          <img class="float-none lg:float-left max-h-32 md:max-h-60 lg:max-h-80" src="./assets/portada.png"
+            alt="Imagen de la portada del poemario" />
+          <p class="text-left text-2xl lg:text-4x1">
+            Este libro fue construido de un conjunto de Poesías escritas que en el tiempo guardadas estaban durante
+            años
+            y en este 2020 la decisión de editarlas en un poemario! Digital con el cuál fueron fluyendo poemas en su
+            trayecto y así completar con éxito las elegidas poesías para este ejemplar!
+            E aquí una que identifica su existir!
+          </p>
+          <br>
+
         </div>
-      </section>
-      <div class="separador py-52 filter grayscale"></div>
-      <!--       <section id="poemas">
-        <div class="text-center flex flex-col container mx-auto py-5">
-          <h1 class="text-3xl py-5">
-            <strong><u>Poemas</u></strong>
-          </h1>
+      
+<div class="flex container mx-auto">
+  <p class="text-left pt-10 font-poem text-2xl md:text-3xl">“Ajedrez”
+    apasionante juego tal vez como el desafiante Ajedrez .!!
+    decidida pujante un paso a tras otro adelante!
+    Empuñando finas letras , temiendo fueran arrebatar ...
+    Por años cobijando ese tesoro en papel que
+    “lindoslocoscuerdos “ saben entender...
+    caminando en aventuras tratando de revelar aquella noble escritura que lograste publicar .
+    sobre un pequeño libro de cuetos ,Hadas ,fantasías y más...
+    sueños majestuosos para contar .
+    metióse la aventura cómo arañas en telar...
+    al cuento entretejiendo,
+    compartiendo los momentos desafiando esa misión!!!
+    Desvelados por las noches ,palpitados recuerdos ...
+    sosteniendo fuerte el timón!
+    Cómo el arca de Noé,
+    llevando especies de gran valor ..
+    metida entre las viñas
+    recibiendo uvas frescas
+    compartiendo el honor sellando antologías publicadas con pasión sopla el viento ...
+    abren velas...
+    Zarpa el barco ...
+    el viaje empieza ...
+    con coraje y solo un lápiz de equipaje
+    conociendo personajes suben duendes a babor ....
+    trazando el desnivel para llegar hasta “Rey”
+    tu tesoro de papel !!!
+
+    Por:Mirtha Gladys Alvarez”
+    Bs.As
+    Argentina</p>
+
+</div>
+       
+
+      </div>
+    </section>
+    <hr>
+    <div class="separador py-40 filter grayscale"></div>
+<hr>
+    <section id="poemas" class="bg-black">
+      <div class="py-20 flex flex-col text-white items-center container mx-auto min-h-screen">
+        <h1 class="text-6xl md:text-8xl pb-20">Poemas</h1>
+        
+        <div id="poems" class="flex flex-wrap justify-center">
+          <img class="my-5 mr-0 md:mr-5" src="./assets/poems/ardillita.jpg" alt="" />
+          <img class="my-5 mr-0 md:mr-5" src="./assets/poems/barrilete.jpg" alt="" />
+          <img class="my-5 mr-0 md:mr-5" src="./assets/poems/cafe.jpg" alt="" />
+          <img class="my-5 mr-0 md:mr-5" src="./assets/poems/hechicero.jpg" alt="" />
         </div>
-      </section> -->
-      <section id="poemas" class="bg-black">
-        <div class="flex flex-col text-white items-center container mx-auto">
-          <h1 class="text-4xl py-10">Poemas</h1>
-          <div class="flex flex-wrap justify-center">
-            <img src="./assets/poems/abrazame.jpg" alt="" />
-            <img src="./assets/poems/abrazame.jpg" alt="" />
-            <img src="./assets/poems/abrazame.jpg" alt="" />
-            <img src="./assets/poems/abrazame.jpg" alt="" />
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
-    <script type="text/javascript" src="./scripts.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="text/javascript" src="./scripts.js"></script>
+</body>
+
 </html>
