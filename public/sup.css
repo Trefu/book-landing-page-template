@@ -42,7 +42,6 @@ li > a:hover::before {
   background: url("./assets/backgroundImage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: top;
 }
 

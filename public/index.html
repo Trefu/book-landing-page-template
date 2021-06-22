@@ -50,7 +50,7 @@
           md:flex
           px-4
           py-0
-          md:py-4
+          md:py-2
           text-indigo-100
           font-semibold
           md:font-bold
@@ -113,28 +113,35 @@
   </nav>
 
   <main>
-    <header id="headerPrincipal" class="min-h-screen flex flex-col justify-center">
-      <div id="verseContainer" class="container mx-auto text-center">
-        <h1 id="verse" class="duration-1000 transform ease-in-out text-white text-4xl md:text-6xl lg:text-8xl p-5">
-          " Palabras que corren por mis venas y a gritos piden escapar "
-        </h1>
-
+    <header id="headerPrincipal" >
+      <div class="min-h-screen flex flex-col justify-between" >
+        <div></div>
+        <div id="verseContainer" class="container mx-auto text-center">
+          <h1 id="verse" class="duration-1000 transform ease-in-out text-white text-4xl md:text-6xl lg:text-8xl p-5">
+            " Palabras que corren por mis venas y a gritos piden escapar "
+          </h1>
+        </div>
+        
+        <svg class="-mb-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#273036000000000000000" fill-opacity="1"
+            d="M0,224L26.7,218.7C53.3,213,107,203,160,197.3C213.3,192,267,192,320,170.7C373.3,149,427,107,480,101.3C533.3,96,587,128,640,138.7C693.3,149,747,139,800,117.3C853.3,96,907,64,960,90.7C1013.3,117,1067,203,1120,213.3C1173.3,224,1227,160,1280,128C1333.3,96,1387,96,1413,96L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+          </path>
+        </svg>
     </header>
-<hr>
     <section id="sobre">
       <div class="
-      py-5
-                        text-center
+            py-5 
+            text-center
             flex flex-col
             justify-center
             min-h-screen
             bg-black
             text-white
                       ">
-        <h1 class="text-4xl md:text-6xl ">
+        <h1 class="text-4xl md:text-4xl lg:text-6xl ">
           <strong>Sobre</strong>
         </h1>
-      
+
         <div class="
               flex flex-col
               lg:flex-row
@@ -144,9 +151,9 @@
               md:text-left
               items-center
                          ">
-          <img class="float-none lg:float-left max-h-32 md:max-h-60 lg:max-h-80" src="./assets/portada.png"
+          <img class="float-none lg:float-left max-h-60 lg:max-h-80" src="./assets/portada.png"
             alt="Imagen de la portada del poemario" />
-          <p class="text-left text-2xl lg:text-4x1">
+          <p class="text-left text-lg md:text-2xl lg:text-2x1">
             Este libro fue construido de un conjunto de Poesías escritas que en el tiempo guardadas estaban durante
             años
             y en este 2020 la decisión de editarlas en un poemario! Digital con el cuál fueron fluyendo poemas en su
@@ -156,58 +163,115 @@
           <br>
 
         </div>
-      
-<div class="flex container mx-auto">
-  <p class="text-left pt-10 font-poem text-2xl md:text-3xl">“Ajedrez”
-    apasionante juego tal vez como el desafiante Ajedrez .!!
-    decidida pujante un paso a tras otro adelante!
-    Empuñando finas letras , temiendo fueran arrebatar ...
-    Por años cobijando ese tesoro en papel que
-    “lindoslocoscuerdos “ saben entender...
-    caminando en aventuras tratando de revelar aquella noble escritura que lograste publicar .
-    sobre un pequeño libro de cuetos ,Hadas ,fantasías y más...
-    sueños majestuosos para contar .
-    metióse la aventura cómo arañas en telar...
-    al cuento entretejiendo,
-    compartiendo los momentos desafiando esa misión!!!
-    Desvelados por las noches ,palpitados recuerdos ...
-    sosteniendo fuerte el timón!
-    Cómo el arca de Noé,
-    llevando especies de gran valor ..
-    metida entre las viñas
-    recibiendo uvas frescas
-    compartiendo el honor sellando antologías publicadas con pasión sopla el viento ...
-    abren velas...
-    Zarpa el barco ...
-    el viaje empieza ...
-    con coraje y solo un lápiz de equipaje
-    conociendo personajes suben duendes a babor ....
-    trazando el desnivel para llegar hasta “Rey”
-    tu tesoro de papel !!!
 
-    Por:Mirtha Gladys Alvarez”
-    Bs.As
-    Argentina</p>
+        <div class="flex container mx-auto">
+          <p class="text-left pt-10 font-poem text-lg md:text-2xl">“Ajedrez”
+            apasionante juego tal vez como el desafiante Ajedrez .!!
+            decidida pujante un paso a tras otro adelante!
+            Empuñando finas letras , temiendo fueran arrebatar ...
+            Por años cobijando ese tesoro en papel que
+            “lindoslocoscuerdos “ saben entender...
+            caminando en aventuras tratando de revelar aquella noble escritura que lograste publicar .
+            sobre un pequeño libro de cuetos ,Hadas ,fantasías y más...
+            sueños majestuosos para contar .
+            metióse la aventura cómo arañas en telar...
+            al cuento entretejiendo,
+            compartiendo los momentos desafiando esa misión!!!
+            Desvelados por las noches ,palpitados recuerdos ...
+            sosteniendo fuerte el timón!
+            Cómo el arca de Noé,
+            llevando especies de gran valor ..
+            metida entre las viñas
+            recibiendo uvas frescas
+            compartiendo el honor sellando antologías publicadas con pasión sopla el viento ...
+            abren velas...
+            Zarpa el barco ...
+            el viaje empieza ...
+            con coraje y solo un lápiz de equipaje
+            conociendo personajes suben duendes a babor ....
+            trazando el desnivel para llegar hasta “Rey”
+            tu tesoro de papel !!!
+            <br>
+            <br>
+            Por:Mirtha Gladys Alvarez”
+            Bs.As
+            Argentina
+          </p>
 
-</div>
-       
+        </div>
+
 
       </div>
     </section>
-    <hr>
-    <div class="separador py-40 filter grayscale"></div>
-<hr>
-    <section id="poemas" class="bg-black">
-      <div class="py-20 flex flex-col text-white items-center container mx-auto min-h-screen">
-        <h1 class="text-6xl md:text-8xl pb-20">Poemas</h1>
-        
-        <div id="poems" class="flex flex-wrap justify-center">
-          <img class="my-5 mr-0 md:mr-5" src="./assets/poems/ardillita.jpg" alt="" />
-          <img class="my-5 mr-0 md:mr-5" src="./assets/poems/barrilete.jpg" alt="" />
-          <img class="my-5 mr-0 md:mr-5" src="./assets/poems/cafe.jpg" alt="" />
-          <img class="my-5 mr-0 md:mr-5" src="./assets/poems/hechicero.jpg" alt="" />
-        </div>
+
+    <!--   <div class="separador py-40 filter grayscale"></div> -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#273036000000000000000" fill-opacity="1"
+        d="M0,64L26.7,85.3C53.3,107,107,149,160,138.7C213.3,128,267,64,320,74.7C373.3,85,427,171,480,197.3C533.3,224,587,192,640,192C693.3,192,747,224,800,245.3C853.3,267,907,277,960,245.3C1013.3,213,1067,139,1120,122.7C1173.3,107,1227,149,1280,176C1333.3,203,1387,213,1413,218.7L1440,224L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+      </path>
+    </svg>
+
+    <section id="poemas" class="bg-white">
+      <h1 class="text-6xl md:text-6xl lg:text-8xl pb-20 text-center">Poemas</h1>
+      
+      <div class="container mx-auto px-4"> 
+                
+        <section class="py-8 px-4">
+          <div class="flex flex-wrap -mx-4">
+            <div class="hidden md:block md:w-1/2 px-4">
+              <div class="h-full w-full bg-cover rounded shadow-md" style="background-image: url('./assets/poems/abrazame.jpg')"></div>
+            </div>
+            <div class="md:w-1/2 h-auto px-4">
+              <div class="mb-8"><img class="rounded shadow-md" src="./assets/poems/ajedrez.jpg" alt=""></div>
+              <div><img class="rounded shadow-md" src="./assets/poems/madre.jpg" alt=""></div>
+            </div>
+          </div>
+        </section>
+                  
+        <section class="py-8 px-4">
+          <div class="flex flex-wrap -mx-4">
+            <div class="md:w-1/2 px-4 mb-8 md:mb-0"><img class="rounded shadow-md" src="./assets/poems/cafe.jpg" alt=""></div>
+            <div class="md:w-1/2 px-4 mb-8 md:mb-0"><img class="rounded shadow-md" src="./assets/poems/cafe.jpg" alt=""></div>
+          </div>
+        </section>
+                  
+        <section class="pt-8 px-4">
+          <div class="flex flex-wrap -mx-4">
+            <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="./assets/poems/cafe.jpg" alt=""></div>
+            <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="./assets/poems/hechicero.jpg" alt=""></div>
+            <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="./assets/poems/madre.jpg" alt=""></div>
+            <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="./assets/poems/maestra.jpg" alt=""></div>
+            <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="./assets/poems/cafe.jpg" alt=""></div>
+            <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow-md" src="./assets/poems/ardillita.jpg" alt=""></div>
+          </div>
+        </section>
+ 
       </div>
+  
+      
+      <!-- <div class="py-8 px-4 flex justify-center">
+        <div class="flex flex-wrap mx-4">
+          <div class="hidden md:block md:w-1/2 px-4">
+            <div class="h-full w-full bg-cover rounded shadow-md" style="background-image: url('./assets/poems/cafe.jpg')"></div>
+          </div>
+          <div class="md:w-1/2 h-auto px-4">
+            <div class="mb-8"><img class="rounded shadow-md" src="./assets/poems/abrazame.jpg" alt=""></div>
+            <div><img class="rounded shadow-md" src="./assets/poems/ajedrez.jpg" alt=""></div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="py-8 px-4 flex justify-center">
+        <div class="flex flex-wrap mx-4">
+          <div class="hidden md:block md:w-1/2 px-4">
+            <div class="h-full w-full bg-cover rounded shadow-md" style="background-image: url('./assets/poems/cafe.jpg')"></div>
+          </div>
+          <div class="md:w-1/2 h-auto px-4">
+            <div class="mb-8"><img class="rounded shadow-md" src="./assets/poems/abrazame.jpg" alt=""></div>
+            <div><img class="rounded shadow-md" src="./assets/poems/ajedrez.jpg" alt=""></div>
+          </div>
+        </div> -->
+        
     </section>
   </main>
   <footer></footer>
