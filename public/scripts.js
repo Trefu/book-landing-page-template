@@ -27,7 +27,8 @@ const fadeOutHeader = () => {
     setTimeout(() => {
       VERSE_HEADER.textContent =
         '" Produciendo una veta en ellas y a la tinta al fin llegar "';
-      VERSE_HEADER.classList.toggle("opacity-0");
+      VERSE_HEADER.classList.remove("opacity-0");
+      VERSE_HEADER.classList.remove("transform")
     }, 1000);
   }, 4500);
 };
@@ -37,7 +38,6 @@ const init = () => {
     document.body.classList.remove("overflow-hidden");
     const loader = document.getElementById("loading");
     loader.remove();
-
     fadeOutHeader();
   }, 1500);
 };
