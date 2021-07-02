@@ -1,7 +1,7 @@
 const toggleBtn = document.getElementById("toggleBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 const VERSE_HEADER = document.getElementById("verse");
-
+const navToggle = document.getElementsByClassName("toggle");
 /* 
 toggleBtn.onclick = function toggleMenu() {
   const navToggle = document.getElementsByClassName("toggle");
@@ -12,14 +12,26 @@ toggleBtn.onclick = function toggleMenu() {
   mobileMenu.classList.toggle("transform");
 };
  */
-
 toggleBtn.addEventListener("click", () => {
-  const navToggle = document.getElementsByClassName("toggle");
+
   for (let i = 0; i < navToggle.length; i++) {
     navToggle.item(i).classList.toggle("hidden");
   }
   mobileMenu.classList.toggle("transform");
 });
+
+const btnNavBar = document.getElementsByClassName("btn-navbar");
+
+Array.from(btnNavBar).forEach(function (element) {
+  element.addEventListener("click", () => {
+    toggleBtn.click()
+  })
+});
+/* btnNavBar.addEventListener("click", () => {
+  navToggle.click()
+})
+ */
+
 
 const fadeOutHeader = () => {
   setTimeout(() => {
