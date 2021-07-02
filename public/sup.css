@@ -1,14 +1,20 @@
 html {
   scroll-behavior: smooth;
 }
+
 *:focus {
   outline: none;
 }
+
 body {
   font-family: "Mate SC", serif;
 }
 
-li > a {
+.font-MATE {
+  font-family: "Mate SC", serif;
+}
+
+li>a {
   position: relative;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -17,7 +23,8 @@ li > a {
 :focus {
   outline: none;
 }
-li > a::before {
+
+li>a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -30,7 +37,7 @@ li > a::before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-li > a:hover::before {
+li>a:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
@@ -38,6 +45,7 @@ li > a:hover::before {
 .font-poem {
   font-family: "Dancing Script", cursive;
 }
+
 #headerPrincipal {
   background: url("./assets/backgroundImage.jpg");
   background-repeat: no-repeat;
@@ -45,9 +53,6 @@ li > a:hover::before {
   background-position: top;
 }
 
-#test {
-  font-family: "Dancing Script";
-}
 
 #verseContainer {
   font-family: "Dancing Script", cursive;
@@ -74,13 +79,15 @@ li > a:hover::before {
   height: 100%;
   z-index: 1000;
 }
+
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #3498db;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
   animation: spin 2s linear infinite;
 }
 
@@ -88,87 +95,26 @@ li > a:hover::before {
   background: url("https://images.unsplash.com/photo-1523875194681-bedd468c58bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  z-index: 2;
-  font-family: "Dancing Script";
 }
 
-#ajedrez::before {
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(36, 36, 36, 0.8);
-  z-index: -1;
-}
 #madre {
   background: url("https://images.unsplash.com/photo-1542385151-efd9000785a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80");
   background-size: cover;
-
   background-repeat: no-repeat;
-  position: relative;
-  z-index: 2;
-  font-family: "Dancing Script";
-  background-position: center;
 }
 
-#madre::before {
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(36, 36, 36, 0.8);
-  z-index: -1;
-}
 #coffee {
   background: url("https://images.unsplash.com/photo-1518057111178-44a106bad636?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
   background-size: cover;
 
   background-repeat: no-repeat;
-  position: relative;
-  z-index: 2;
-  font-family: "Dancing Script";
-  background-position: center;
 }
 
-#coffee::before {
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(36, 36, 36, 0.8);
-  z-index: -1;
-}
 #barrilete {
   background: url("https://images.unsplash.com/photo-1604861696908-d57e34ee8855?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80");
   background-size: cover;
 
   background-repeat: no-repeat;
-  position: relative;
-  z-index: 2;
-  font-family: "Dancing Script";
-  background-position: center;
-}
-
-#barrilete::before {
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(36, 36, 36, 0.8);
-  z-index: -1;
 }
 
 #hechicero {
@@ -176,36 +122,43 @@ li > a:hover::before {
   background-size: cover;
 
   background-repeat: no-repeat;
-  position: relative;
-  z-index: 2;
-  font-family: "Dancing Script";
-  background-position: center;
-}
-
-#hechicero::before {
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(36, 36, 36, 0.8);
-  z-index: -1;
 }
 
 #ardillita {
   background: url("https://images.unsplash.com/photo-1533651180995-3b8dcd33e834?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-size: cover;
-
   background-repeat: no-repeat;
-  position: relative;
-  z-index: 2;
-  font-family: "Dancing Script";
-  background-position: center;
 }
 
-#ardillita::before {
+#abrazame {
+  background: url("https://images.unsplash.com/photo-1488557758410-8f12c8860f11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#soldado {
+  background: url("https://images.unsplash.com/photo-1532944276301-9cd8731051fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1067&q=80");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#maestra {
+  background: url("https://images.unsplash.com/photo-1588075592405-d3d4f0846961?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#tiempo {
+  background: url("./assets/tiempo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.poem-container::before {
   content: "";
   display: block;
   height: 100%;
@@ -215,4 +168,26 @@ li > a:hover::before {
   width: 100%;
   background-color: rgba(36, 36, 36, 0.8);
   z-index: -1;
+}
+
+.poem-container {
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  font-family: "Dancing Script";
+
+}
+
+.poem-container>p:nth-child(2) {
+  margin-bottom: 2rem;
+
+}
+
+.autor-name:after {
+  content: "Argentina";
+  font-size: 1rem;
+  display: block;
+  color: white;
+
+  font-family: "Mate SC";
 }

@@ -41,7 +41,8 @@ const init = () => {
     fadeOutHeader();
   }, 1500);
 };
-document.onload = init();
+document.o
+nload = init();
 
 /* const AJEDREZ_POEMA = `Apasionante juego tal vez como el desafiante Ajedrez!!\n
 decidida pujante un paso atrás otro para adelante!\n

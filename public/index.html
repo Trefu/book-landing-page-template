@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
   <link href="tailwind.css" rel="stylesheet" />
-  <!-- <link href="sup.css" rel="stylesheet" /> -->
+  <link href="sup.css" rel="stylesheet" />
 </head>
 
 <body class="overflow-hidden">
@@ -28,7 +28,7 @@
 
     <a href="#headerPrincipal" class="
           ml-4
-          text-2xl
+          text-lg md:text-2xl
           hidden
           md:inline-block
           text-yellow-300
@@ -85,7 +85,7 @@
         </a>
       </li>
       <li class="md:ml-4">
-<!--         <a class="
+        <!--         <a class="
               block
               py-2
               md:px-2
@@ -110,7 +110,7 @@
           Poemas
         </a>
       </li>
-      <li class="md:ml-4">
+      <!--       <li class="md:ml-4">
         <a class="block
               py-2
               md:px-2
@@ -121,7 +121,7 @@
             " href="#contacto">
           Contacto
         </a>
-      </li>
+      </li> -->
     </ul>
   </nav>
 
@@ -178,7 +178,7 @@
         </div>
 
         <div class="flex container mx-auto">
-          <p class="text-left pt-10 font-poem text-lg md:text-2xl">“Ajedrez”
+          <p class="text-left pt-10 font-poem  text-lg md:text-2xl">“Ajedrez”
             apasionante juego tal vez como el desafiante Ajedrez .!!
             decidida pujante un paso a tras otro adelante!
             Empuñando finas letras , temiendo fueran arrebatar ...
@@ -203,7 +203,6 @@
       </div>
     </section>
 
-    <!--   <div class="separador py-40 filter grayscale"></div> -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#273036000000000000000" fill-opacity="1"
         d="M0,64L26.7,85.3C53.3,107,107,149,160,138.7C213.3,128,267,64,320,74.7C373.3,85,427,171,480,197.3C533.3,224,587,192,640,192C693.3,192,747,224,800,245.3C853.3,267,907,277,960,245.3C1013.3,213,1067,139,1120,122.7C1173.3,107,1227,149,1280,176C1333.3,203,1387,213,1413,218.7L1440,224L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
@@ -217,18 +216,16 @@
 
         <section class="py-8 px-4">
           <div class="flex flex-wrap -mx-4">
-            <div class="hidden md:block md:w-1/2 px-4">
+            <div class="hidden md:block  md:w-1/2 px-4">
               <div class="h-full w-full bg-cover rounded shadow-md" style="background-image: url('./assets/autor.jpg')">
               </div>
             </div>
 
 
 
-            <div class="md:w-1/2 h-auto px-4 ">
-              <div id="ajedrez" class="mb-8 text-white p-10 text-2xl">
-                <h2 class="text-center text-4xl">Ajedrez</h2>
-                <br>
-
+            <div class=" md:w-1/2 h-auto px-4 ">
+              <div id="ajedrez" class="mb-8 text-white p-10 text-lg md:text-2xl poem-container flex flex-col">
+                <h2 class="text-center text-4xl mb-8">Ajedrez</h2>
                 <p>Apasionante juego tal vez como el desafiante Ajedrez!! <br>
                   decidida pujante un paso atrás otro para adelante! <br>
                   Empuñando finas letras, temiendo fueran arrebatar. <br>
@@ -253,10 +250,13 @@
                   conociendo personajes suben duendes a babor <br>
                   trazando el desnivel para llegar hasta "Rey" <br>
                   tu tesoro de papel!!!</p>
+                <p class="mt-auto text-lg text-yellow-400 autor-name">
+                  Mirtha Gladys Alvarez
+                </p>
               </div>
-              <div class="text-white p-10 text-2xl" id="madre">
+              <div class="text-white p-10 text-lg md:text-2xl poem-container flex flex-col" id="madre">
                 <h2 class="text-center text-4xl mb-8">Madre</h2>
-                <p>
+                <p class="mb-8">
                   Fuerte! <br>
                   Fuerte como la roca, ni viento ni marea la destrozan! <br>
                   Guiando a sus pulluelos por el sendero más bello <br>
@@ -270,6 +270,9 @@
                   Fuerte como la roca bella frágil como una rosa... <br>
                   Si señores es mi madre y cómo ellas hay pocas!!!
                 </p>
+                <p class="mt-auto text-lg text-yellow-400 autor-name">
+                  Mirtha Gladys Alvarez
+                </p>
               </div>
             </div>
           </div>
@@ -277,8 +280,8 @@
 
         <section class="py-8 px-4">
           <div class="flex flex-wrap -mx-4">
-            <div class="md:w-1/2 h-auto px-4 text-white text-2xl mb-8">
-              <div id="coffee" class="p-10">
+            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8 ">
+              <div id="coffee" class="p-10 poem-container flex flex-col">
                 <h2 class="text-center text-4xl mb-8 ">Coffee</h2>
                 <p>
                   Cae la tarde rompiendo reglas <br>
@@ -303,16 +306,16 @@
                   rosan las manos rompe el silencio <br>
                   un gemido atrae tu ardiente boca <br>
                   sobre mi cuerpo.
-
-
-
+                </p>
+                <p class=" mt-auto text-lg text-yellow-400 autor-name">
+                  Mirtha Gladys Alvarez
                 </p>
               </div>
 
             </div>
 
-            <div class="md:w-1/2 h-auto px-4 text-white text-2xl mb-8">
-              <div id="barrilete" class="p-10 h-full ">
+            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+              <div id="barrilete" class="p-10 h-full  poem-container flex flex-col">
                 <h2 class="text-center text-4xl mb-8">Barrilete</h2>
                 <p>
                   Del hilo tironeas y su cola se menea <br>
@@ -327,12 +330,14 @@
                   menea so cola como un pez en la fuente <br>
                   tus ojos se admiran como toma vida <br>
                   disfrutas con el sol que también lo mira. <br>
-
+                </p>
+                <p class=" mt-auto text-lg text-yellow-400 autor-name">
+                  Mirtha Gladys Alvarez
                 </p>
               </div>
             </div>
-            <div class="md:w-1/2 h-auto px-4 text-white text-2xl mb-8 md:mb-0">
-              <div id="hechicero" class="p-10 h-full ">
+            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+              <div id="hechicero" class="p-10 h-full poem-container flex flex-col ">
                 <h2 class="text-center text-4xl mb-8">Hechicero del amor</h2>
                 <p>
                   Son tus manos las que forjan <br>
@@ -350,14 +355,14 @@
                   La pasión de este embrujo que sin querer nos envuelve <br>
                   derretidos juntos nos sorprenden. <br>
                   En este hechizo de amor!
-
-
-
+                </p>
+                <p class=" mt-auto text-lg text-yellow-400 autor-name">
+                  Mirtha Gladys Alvarez
                 </p>
               </div>
             </div>
-            <div class="md:w-1/2 h-auto px-4 text-white text-2xl">
-              <div id="ardillita" class="p-10 h-full ">
+            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+              <div id="ardillita" class="p-10 h-full poem-container flex flex-col ">
                 <h2 class="text-center text-4xl mb-8">Ardillita</h2>
                 <p>
                   Ardillita por aquí ardillita por allá <br>
@@ -379,6 +384,112 @@
                   anhelando esa estrellita <br>
                   que muy pronto alcanzará!! <br>
                   Ardillita por aquí <br>
+                </p>
+                <p class=" mt-auto text-lg text-yellow-400 autor-name">
+                  Mirtha Gladys Alvarez
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+              <div id="abrazame" class="p-10 h-full poem-container flex flex-col ">
+                <h2 class="text-center text-4xl mb-8">Abrazame</h2>
+                <p>
+                  Muero por verte, sentirte , tenerte <br>
+                  Muero por sentir el sabor de ese beso <br>
+                  Besos que no están. <br>
+                  Besos que se escapan con suavidad. <br>
+                  Besos que quizás tengan miedo <br>
+                  De sentir la pasión de estos labios <br>
+                  Que con ansias quieren volverte a besar... <br>
+                  Aunque saben con certeza... <br>
+                  Que jugando solo estás.
+                </p>
+                <p class="text-lg text-yellow-400 autor-name mt-auto">
+                  Mirtha Gladys Alvarez
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+              <div id="soldado" class="p-10 h-full poem-container flex flex-col ">
+                <h2 class="text-center text-4xl mb-8">A ti soldado</h2>
+                <p>
+                  Aprendí a conocer esas tierras tan lejanas <br>
+                  que son mías y no sabía del valor <br>
+                  que hoy tendrían... <br>
+                  Por el amor que le diste sin pensar <br>
+                  ni mirar atrás! <br> <br>
+                  Palpaste el suelo con tu pecho <br>
+                  Arrastrando en el follaje sembrando <br>
+                  gotas de sudor. <br>
+                  contando dias, noches de dolor... <br>
+                  envainadas de barro y frío <br>
+                  de garras endurecidas ! <br>
+                  Embistiendo por honor!<br> <br>
+                  En esa tierra tan querida... <br>
+                  Tu juventud bravía <br>
+                  y el orgullo de la bandera que prometiste cuidar... <br>
+                  hoy flamea con las almas <br>
+                  de valientes en libertad!!! <br>
+                </p>
+                <p class=" mt-auto text-lg text-yellow-400 autor-name">
+                  Mirtha Gladys Alvarez
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+              <div id="maestra" class="p-10 h-full poem-container flex flex-col ">
+                <h2 class="text-center text-4xl mb-8">Maestra</h2>
+                <p>
+                  Aprendí a conocer esas tierras tan lejanas <br>
+                  que son mías y no sabía del valor <br>
+                  que hoy tendrían... <br>
+                  Por el amor que le diste sin pensar <br>
+                  ni mirar atrás! <br> <br>
+                  Palpaste el suelo con tu pecho <br>
+                  Arrastrando en el follaje sembrando <br>
+                  gotas de sudor. <br>
+                  contando dias, noches de dolor... <br>
+                  envainadas de barro y frío <br>
+                  de garras endurecidas ! <br>
+                  Embistiendo por honor!<br> <br>
+                  En esa tierra tan querida... <br>
+                  Tu juventud bravía <br>
+                  y el orgullo de la bandera que prometiste cuidar... <br>
+                  hoy flamea con las almas <br>
+                  de valientes en libertad!!! <br>
+                </p>
+                <p class=" mt-auto text-lg text-yellow-400 autor-name">
+                  Mirtha Gladys Alvarez
+                </p>
+              </div>
+            </div>
+            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+              <div id="tiempo" class="p-10 h-full poem-container flex flex-col ">
+                <h2 class="text-center text-4xl mb-8">El Tiempo</h2>
+                <p>
+
+                  El tiempo que recorres no será perdido si ves que ese tiempo fue bien absorbido!
+                  Tiempo que te marca la meta,la distancia .<br>
+                  tiempo que no sobra hasta el óseo se lo cobra !<br>
+                  <br>
+                  tiempo que no pierdes porque perdido está, cuando dejas de marchar!<br>
+                  Tiempo que requiere la vida para contar cada paso de tu andar…<br>
+                  tiempo que me marcan,<br>
+                  las agujas y un tic tac !<br>
+                  <br>
+                  Quien quisiera ser como La oruga sabe de tiempos y disfrutar…<br>
+                  tiempo que espera ser mariposa ySus alas plegar.<br>
+                  <br>
+                  Volando en Terciopelo de colores en un tirano tiempo que cuenta su libertad!<br>
+                  posada sobre las flores en briza primaveral .<br>
+                  No saben ellas del reloj…<br>
+                  el sol las guía con su tibio calor .<br>
+
+                  <p class="font-MATE mt-auto text-sm">"Vanguardia" <br>
+                    Dinámica sobre el tiempo </p>
+                  <p class=" mt-auto text-lg text-yellow-400 autor-name">
+                    Mirtha Gladys Alvarez
+                  </p>
 
 
                 </p>
@@ -393,10 +504,10 @@
 
       <!-- <div class="py-8 px-4 flex justify-center">
         <div class="flex flex-wrap mx-4">
-          <div class="hidden md:block md:w-1/2 px-4">
+          <div class="hidden md:block  md:w-1/2 px-4">
             <div class="h-full w-full bg-cover rounded shadow-md" style="background-image: url('./assets/poems/cafe.jpg')"></div>
           </div>
-          <div class="md:w-1/2 h-auto px-4">
+          <div class=" md:w-1/2 h-auto px-4">
             <div class="mb-8"><img class="rounded shadow-md" src="./assets/poems/abrazame.jpg" alt="Poema"></div>
             <div><img class="rounded shadow-md" src="./assets/poems/ajedrez.jpg" alt=""></div>
           </div>
@@ -405,10 +516,10 @@
       </div>
       <div class="py-8 px-4 flex justify-center">
         <div class="flex flex-wrap mx-4">
-          <div class="hidden md:block md:w-1/2 px-4">
+          <div class="hidden md:block  md:w-1/2 px-4">
             <div class="h-full w-full bg-cover rounded shadow-md" style="background-image: url('./assets/poems/cafe.jpg')"></div>
           </div>
-          <div class="md:w-1/2 h-auto px-4">
+          <div class=" md:w-1/2 h-auto px-4">
             <div class="mb-8"><img class="rounded shadow-md" src="./assets/poems/abrazame.jpg" alt=""></div>
             <div><img class="rounded shadow-md" src="./assets/poems/ajedrez.jpg" alt=""></div>
           </div>
@@ -417,16 +528,13 @@
     </section>
     <footer class="bg-black">
       <div class="container mx-auto flex justify-center">
-        <ul class="text-white flex justify-between">
-          <li>asd</li>
-          <li>dsa</li>
-          <li>kasdk</li>
-        </ul>
+        <p class="text-white"> derechos reservados</p>
       </div>
     </footer>
   </main>
   <footer></footer>
   <script type="text/javascript" src="./scripts.js"></script>
+
 </body>
 
 </html>
