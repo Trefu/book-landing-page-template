@@ -171,6 +171,10 @@
 
     }
 
+    .autor-img {
+        background-image: url('./assets/autor.jpg');
+    }
+
     .poem-container::before {
         content: "";
         display: block;

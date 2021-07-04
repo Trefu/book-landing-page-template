@@ -5,28 +5,37 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tus huellas sobre mi Tinta</title>
+  <meta name="description" content="Este libro fue construido de un conjunto de Poesías escritas que en el tiempo guardadas estaban durante
+  años">
+  <meta name="keywords"
+    content="poemas, poemario , mirtha gladys alvarez, mirtha, tus huellas en mi tinta, poemari tus huellas, tus huellas poemario, libro de poemas, poemas pagina,pagina de peomas, poemas online, poemario online, huellas en mi tinta ">
+  <title>Tus huellas en mi tinta web oficial</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
   <link href="tailwind.css" rel="stylesheet" />
-  <!--   <link href="sup.css" rel="stylesheet" /> -->
+  <link href="sup.css" rel="stylesheet" />
 </head>
 
 <body class="overflow-hidden">
-  <div id="loading" class=" flex  justify-center items-center bg-black overflow-hidden ">
+  <div id="loading" class=" flex container justify-center items-center bg-black overflow-hidden ">
     <div class="flex justify-center items-center loader "></div>
   </div>
-  <nav id="navbar" class="z-50 sticky top-0 md:flex justify-between bg-black">
-    <div class="flex justify-end md:hidden">
-      <button id="toggleBtn" class="focus:outline-none focus:ring-1 focus:ring-white p-2 m-2">
-        <img class="toggle block" src="./assets/Open.png" width="35" height="35" />
-        <img class="toggle hidden" src="./assets/Close.png" width="35" height="35" />
-      </button>
-    </div>
+  <div class="bg-black sticky top-0 z-50 ">
 
-    <a href="#headerPrincipal" class="
+
+    <nav id="navbar" class="z-50 container mx-auto md:flex justify-between bg-black">
+      <div class="flex justify-end md:hidden">
+        <button id="toggleBtn" class="focus:outline-none focus:ring-1 focus:ring-white p-2 m-2">
+          <img class="toggle block" src="./assets/Open.png" width="35" height="35"
+            alt="icono para abrir barra de navegacion" />
+          <img class="toggle hidden" src="./assets/Close.png" width="35" height="35"
+            alt="icono para cerrar barra de navegacion" />
+        </button>
+      </div>
+
+      <a href="#headerPrincipal" class="
           ml-4
           text-lg md:text-2xl
           hidden
@@ -39,7 +48,7 @@
           py-4
         ">Mirtha Gladys Álvarez</a>
 
-    <ul id="mobileMenu" class="
+      <ul id="mobileMenu" class="
           absolute
           md:static
           w-screen
@@ -58,8 +67,8 @@
           md:transform-none
           transform
         ">
-      <li class="md:ml-4">
-        <a class="
+        <li class="md:ml-4">
+          <a class="
               block
               py-2
               md:px-2
@@ -69,11 +78,11 @@
               hover:text-yellow-300
               btn-navbar
             " href="#">
-          Inicio
-        </a>
-      </li>
-      <li class="md:ml-4">
-        <a class="
+            Inicio
+          </a>
+        </li>
+        <li class="md:ml-4">
+          <a class="
               block
               py-2
               md:px-2
@@ -83,24 +92,12 @@
               hover:text-yellow-300
               btn-navbar
             " href="#sobre">
-          Sobre
-        </a>
-      </li>
-      <li class="md:ml-4">
-        <!--         <a class="
-              block
-              py-2
-              md:px-2
-              transition
-              duration-300
-              ease-in
-              hover:text-yellow-300
-            " href="./100voces/index.html">
-          Sub carpeta
-        </a>
-      </li> -->
-      <li class="md:ml-4">
-        <a class="
+            Sobre
+          </a>
+        </li>
+        <li class="md:ml-4">
+        <li class="md:ml-4">
+          <a class="
               block
               py-2
               md:px-2
@@ -110,24 +107,28 @@
               hover:text-yellow-300
               btn-navbar
             " href="#poemas">
-          Poemas
-        </a>
-      </li>
-      <!--       <li class="md:ml-4">
-        <a class="block
+            Poemas
+          </a>
+        </li>
+        <li class="md:ml-4">
+          <a class="
+              block
               py-2
               md:px-2
               transition
               duration-300
               ease-in
               hover:text-yellow-300
-            " href="#contacto">
-          Contacto
-        </a>
-      </li> -->
-    </ul>
-  </nav>
+              btn-navbar
+            " href="./poemario/index.html">
+            Poemario
+          </a>
+        </li>
 
+
+      </ul>
+    </nav>
+  </div>
   <main>
     <header id="headerPrincipal">
       <div class="min-h-screen flex flex-col justify-between">
@@ -154,9 +155,9 @@
             bg-black
             text-white
                       ">
-        <h1 class="text-4xl md:text-4xl lg:text-6xl pb-8">
+        <h2 class="text-4xl md:text-4xl lg:text-6xl pb-8">
           <strong>Sobre</strong>
-        </h1>
+        </h2>
 
         <div class="
               flex flex-col
@@ -168,9 +169,10 @@
               items-center
                          ">
           <img class="float-none lg:float-left max-h-60 lg:max-h-80" src="./assets/portada.png"
-            alt="Imagen de la portada del poemario" />
+            alt="libro y tableta con la portada del poemario: tus huellas en mi tinta" />
           <p class="text-left text-lg md:text-2xl lg:text-3xl">
-            Este libro fue construido de un conjunto de Poesías escritas que en el tiempo guardadas estaban durante
+            Tus huellas en mi tinta fue construido de un conjunto de Poesías escritas que en el tiempo guardadas estaban
+            durante
             años
             y en este 2020 la decisión de editarlas en un poemario! Digital con el cuál fueron fluyendo poemas en su
             trayecto y así completar con éxito las elegidas poesías para este ejemplar!
@@ -214,22 +216,22 @@
     </svg>
 
     <section id="poemas" class="bg-white">
-      <h1 class="text-6xl md:text-6xl lg:text-8xl pb-20 text-center">Poemas</h1>
+      <h2 class="text-6xl md:text-6xl lg:text-8xl pb-20 text-center">Poemas</h2>
 
       <div class="container mx-auto px-4">
 
         <section class="py-8 px-4">
           <div class="flex flex-wrap -mx-4">
             <div class="hidden md:block  md:w-1/2 px-4">
-              <div class="h-full w-full bg-cover rounded shadow-md" style="background-image: url('./assets/autor.jpg')">
+              <div class="h-full w-full bg-cover rounded shadow-md autor-img">
               </div>
             </div>
 
 
 
-            <div class=" md:w-1/2 h-auto px-4 ">
+            <div class=" md:w-1/2 h-auto px-4 flex-grow">
               <div id="ajedrez" class="mb-8 text-white p-10 text-lg md:text-2xl poem-container flex flex-col">
-                <h2 class="text-center text-4xl mb-8">Ajedrez</h2>
+                <h3 class="text-center text-4xl mb-8">Ajedrez</h3>
                 <p>Apasionante juego tal vez como el desafiante Ajedrez!! <br>
                   decidida pujante un paso atrás otro para adelante! <br>
                   Empuñando finas letras, temiendo fueran arrebatar. <br>
@@ -260,7 +262,7 @@
                 </p>
               </div>
               <div class="text-white p-10 text-lg md:text-2xl poem-container flex flex-col" id="madre">
-                <h2 class="text-center text-4xl mb-8">Madre</h2>
+                <h3 class="text-center text-4xl mb-8">Madre</h3>
                 <p class="mb-8">
                   Fuerte! <br>
                   Fuerte como la roca, ni viento ni marea la destrozan! <br>
@@ -286,9 +288,9 @@
 
         <section class="py-8 px-4">
           <div class="flex flex-wrap -mx-4">
-            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8 ">
+            <div class=" md:w-1/2  flex-grow h-auto px-4 text-white text-lg md:text-2xl mb-8 ">
               <div id="coffee" class="p-10 poem-container flex flex-col">
-                <h2 class="text-center text-4xl mb-8 ">Coffee</h2>
+                <h3 class="text-center text-4xl mb-8 ">Coffee</h3>
                 <p>
                   Cae la tarde rompiendo reglas <br>
                   de corazones en cubierto <br>
@@ -321,9 +323,9 @@
 
             </div>
 
-            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+            <div class=" md:w-1/2  flex-grow h-auto px-4 text-white text-lg md:text-2xl mb-8">
               <div id="barrilete" class="p-10 h-full  poem-container flex flex-col">
-                <h2 class="text-center text-4xl mb-8">Barrilete</h2>
+                <h3 class="text-center text-4xl mb-8">Barrilete</h3>
                 <p>
                   Del hilo tironeas y su cola se menea <br>
                   fuerte corres toma altura <br>
@@ -344,9 +346,9 @@
                 </p>
               </div>
             </div>
-            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+            <div class=" md:w-1/2  flex-grow h-auto px-4 text-white text-lg md:text-2xl mb-8">
               <div id="hechicero" class="p-10 h-full poem-container flex flex-col ">
-                <h2 class="text-center text-4xl mb-8">Hechicero del amor</h2>
+                <h3 class="text-center text-4xl mb-8">Hechicero del amor</h3>
                 <p>
                   Son tus manos las que forjan <br>
                   y encienden una llama a mi corazón. <br>
@@ -370,9 +372,9 @@
                 </p>
               </div>
             </div>
-            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+            <div class=" md:w-1/2  flex-grow h-auto px-4 text-white text-lg md:text-2xl mb-8">
               <div id="ardillita" class="p-10 h-full poem-container flex flex-col ">
-                <h2 class="text-center text-4xl mb-8">Ardillita</h2>
+                <h3 class="text-center text-4xl mb-8">Ardillita</h3>
                 <p>
                   Ardillita por aquí ardillita por allá <br>
                   Ardillita que despliegas <br>
@@ -400,9 +402,9 @@
                 </p>
               </div>
             </div>
-            <div class="md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+            <div class="md:w-1/2  flex-grow h-auto px-4 text-white text-lg md:text-2xl mb-8">
               <div id="abrazame" class="p-10 h-full poem-container flex flex-col ">
-                <h2 class="text-center text-4xl mb-8">Abrazame</h2>
+                <h3 class="text-center text-4xl mb-8">Abrazame</h3>
                 <p>
                   Muero por verte, sentirte , tenerte <br>
                   Muero por sentir el sabor de ese beso <br>
@@ -420,9 +422,9 @@
                 </p>
               </div>
             </div>
-            <div class="md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+            <div class="md:w-1/2  flex-grow h-auto px-4 text-white text-lg md:text-2xl mb-8">
               <div id="soldado" class="p-10 h-full poem-container flex flex-col ">
-                <h2 class="text-center text-4xl mb-8">A ti soldado</h2>
+                <h3 class="text-center text-4xl mb-8">A ti soldado</h3>
                 <p>
                   Aprendí a conocer esas tierras tan lejanas <br>
                   que son mías y no sabía del valor <br>
@@ -448,27 +450,17 @@
                 </p>
               </div>
             </div>
-            <div class="md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+            <div class="md:w-1/2  flex-grow h-auto px-4 text-white text-lg md:text-2xl mb-8">
               <div id="maestra" class="p-10 h-full poem-container flex flex-col ">
-                <h2 class="text-center text-4xl mb-8">Maestra</h2>
+                <h3 class="text-center text-4xl mb-8">Maestra</h3>
                 <p>
-                  Aprendí a conocer esas tierras tan lejanas <br>
-                  que son mías y no sabía del valor <br>
-                  que hoy tendrían... <br>
-                  Por el amor que le diste sin pensar <br>
-                  ni mirar atrás! <br> <br>
-                  Palpaste el suelo con tu pecho <br>
-                  Arrastrando en el follaje sembrando <br>
-                  gotas de sudor. <br>
-                  contando dias, noches de dolor... <br>
-                  envainadas de barro y frío <br>
-                  de garras endurecidas ! <br>
-                  Embistiendo por honor!<br> <br>
-                  En esa tierra tan querida... <br>
-                  Tu juventud bravía <br>
-                  y el orgullo de la bandera que prometiste cuidar... <br>
-                  hoy flamea con las almas <br>
-                  de valientes en libertad!!! <br>
+                  Hoy vengo a decirte maestra de mi jardín! <br>
+                  te ves tan dulce tan tierna como un gran chocolatin! <br>
+                  mi mesa y mi sillita mis gritos y tu sonrisa <br>
+                  las canciones las caricias nunca las olvidare! <br>
+                  cuando quiera recordarte maestra de mi jardín <br>
+                  yo miraré las estrellas y abriré un chocolatin !!!<br>
+
                 </p>
                 <p class=" mt-auto text-lg text-yellow-400 autor-name">
                   Mirtha Gladys Alvarez
@@ -476,9 +468,9 @@
                 </p>
               </div>
             </div>
-            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+            <div class=" md:w-1/2  flex-grow h-auto px-4 text-white text-lg md:text-2xl mb-8">
               <div id="tiempo" class="p-10 h-full poem-container flex flex-col ">
-                <h2 class="text-center text-4xl mb-8">El Tiempo</h2>
+                <h3 class="text-center text-4xl mb-8">El Tiempo</h3>
                 <p>
 
                   El tiempo que recorres no será perdido si ves que ese tiempo fue bien absorbido!
@@ -509,9 +501,9 @@
                 </p>
               </div>
             </div>
-            <div class=" md:w-1/2 h-auto px-4 text-white text-lg md:text-2xl mb-8">
+            <div class=" md:w-1/2  flex-grow h-auto px-4 text-white text-lg md:text-2xl mb-8">
               <div id="tierra" class="p-10 h-full poem-container flex flex-col ">
-                <h2 class="text-center text-4xl mb-8">Tierra</h2>
+                <h3 class="text-center text-4xl mb-8">Tierra</h3>
                 <p>
                   Madre naturaleza polvo mágico que caes de entre mis manos. <br>
                   Poderosa tierra! <br>
@@ -536,6 +528,11 @@
               </div>
             </div>
           </div>
+          <div class="flex justify-center">
+
+            <a class="text-black bg-yellow-500 hover:bg-yellow-600 focus:bg-yellow-700 py-5 px-10 text-2xl rounded-3xl md:px-40 md:text-5xl shadow-2xl"
+              href="./poemario">ver más</a>
+          </div>
         </section>
 
 
@@ -545,14 +542,14 @@
 
     </section>
     <footer class="bg-black">
-      <!-- start container -->
-      <div class="container mx-auto pt-8 pb-4">
+
+      <div class="container mx-auto pt-8 pb-4 text-center md:text-left">
 
         <div class="flex flex-wrap overflow-hidden sm:-mx-1 md:-mx-px lg:-mx-2 xl:-mx-2">
 
           <div
             class="w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
-            <!-- Column 1 Content -->
+
             <a href="#headerPrincipal" class="
           ml-4
           text-lg md:text-2xl
@@ -569,17 +566,16 @@
 
           <div
             class="w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
-            <!-- Column 2 Content -->
 
-
-            <h4 class="text-white">Important</h4>
+            <h4 class="text-white">Importante</h4>
             <ul class="nav navbar-nav">
               <li id="navi-2" class="leading-7 text-sm">
-                <a class="text-white  text-small" href="/page-1">
-                  Page 1 </a>
+                <a class="text-white  text-small" target="blank"
+                  href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42755/texact.htm">
+                  Regimen de la propiedad intelectual </a>
               </li>
-              <li id="navi-1" class="leading-7 text-sm"><a class="text-white  text-small" href="/page-2">Page
-                  2</a></li>
+              <li id="navi-1" class="leading-7 text-sm"><a class="text-white   text-small"
+                  href="https://www.facebook.com/mirthagladys.alvarez" target="blank"> Contacto</a></li>
             </ul>
 
 
@@ -587,52 +583,46 @@
 
           <div
             class="w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
-            <!-- Column 3 Content -->
+
             <h4 class="text-white">Info</h4>
             <ul class="">
               <li id="navi-2" class="leading-7 text-sm">
-                <a class="text-white  text-small" href="/page-1">
-                  Page 1 </a>
+                <a class="text-white  text-small" target="blank" href="https://www.facebook.com/drugot.letras">
+                  Ediciones Drugot </a>
               </li>
-              <li id="navi-1" class="leading-7 text-sm"><a class="text-white  text-small" href="/page-2">Page
-                  2</a></li>
+              <li id="navi-1" class="leading-7 text-sm"><a class="text-white  text-small" target="blank"
+                  href="https://www.instagram.com/p/CNp-1LQhYP9/?igshid=4zfis79xjfu3">100 voces</a></li>
             </ul>
           </div>
 
           <div
             class="w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
-            <!-- Column 4 Content -->
 
-            <h4 class="text-white">Products</h4>
+            <h4 class="text-white">Diseño</h4>
             <ul class="">
               <li id="navi-2" class="leading-7 text-sm">
-                <a class="text-white  text-small" href="/page-1">
-                  Page 1 </a>
+                <a class="text-white  text-small" target="blank"
+                  href="https://www.linkedin.com/in/lucas-leonel-lopez-59316a1b6/">
+                  Developer </a>
               </li>
-              <li id="navi-1" class="leading-7 text-sm"><a class="text-white  text-small" href="/page-2">Page
-                  2</a></li>
+              <li id="navi-1" class="leading-7 text-sm"><a class="text-white  text-small"
+                  href="https://unsplash.com/">Imagenes
+                </a></li>
             </ul>
           </div>
 
         </div>
-
-
-
-        <!-- Start footer bottom -->
 
         <div class="pt-4 md:flex md:items-center md:justify-center " style="border-top:1px solid white">
           <ul class="">
             <li class="md:mx-2 md:inline leading-7 text-sm" id="footer-navi-2"><a class="text-white  text-small"
-                href="/disclaimer">Disclaimer</a></li>
+                href="#">Tus huellas en mi tinta derechos reservados</a></li>
+
             <li class="md:mx-2 md:inline leading-7 text-sm" id="footer-navi-2"><a class="text-white  text-small"
-                href="/cookie">Cookie policy</a></li>
-            <li class="md:mx-2 md:inline leading-7 text-sm" id="footer-navi-2"><a class="text-white  text-small"
-                href="https://github.com/Trefu" target="blank">Diseñaro por Trefu</a></li>
+                href="https://github.com/Trefu" target="blank">Diseñado por Trefu</a></li>
           </ul>
         </div>
 
-
-        <!-- end container -->
       </div>
 
 
@@ -642,7 +632,6 @@
   </main>
   <footer></footer>
   <script type="text/javascript" src="./scripts.js"></script>
-
 </body>
 
 </html>

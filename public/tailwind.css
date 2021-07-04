@@ -748,6 +748,10 @@ li>a:hover::before {
   background-repeat: no-repeat;
 }
 
+.autor-img {
+  background-image: url('./assets/autor.jpg');
+}
+
 .poem-container::before {
   content: "";
   display: block;
