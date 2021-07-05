@@ -585,6 +585,194 @@ video {
   }
 }
 
+.aspect-w-1,
+.aspect-w-2,
+.aspect-w-3,
+.aspect-w-4,
+.aspect-w-5,
+.aspect-w-6,
+.aspect-w-7,
+.aspect-w-8,
+.aspect-w-9,
+.aspect-w-10,
+.aspect-w-11,
+.aspect-w-12,
+.aspect-w-13,
+.aspect-w-14,
+.aspect-w-15,
+.aspect-w-16 {
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+}
+
+.aspect-w-1 > *,
+.aspect-w-2 > *,
+.aspect-w-3 > *,
+.aspect-w-4 > *,
+.aspect-w-5 > *,
+.aspect-w-6 > *,
+.aspect-w-7 > *,
+.aspect-w-8 > *,
+.aspect-w-9 > *,
+.aspect-w-10 > *,
+.aspect-w-11 > *,
+.aspect-w-12 > *,
+.aspect-w-13 > *,
+.aspect-w-14 > *,
+.aspect-w-15 > *,
+.aspect-w-16 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.aspect-none {
+  position: static;
+  padding-bottom: 0;
+}
+
+.aspect-none > * {
+  position: static;
+  height: auto;
+  width: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.aspect-w-1 {
+  --tw-aspect-w: 1;
+}
+
+.aspect-w-2 {
+  --tw-aspect-w: 2;
+}
+
+.aspect-w-3 {
+  --tw-aspect-w: 3;
+}
+
+.aspect-w-4 {
+  --tw-aspect-w: 4;
+}
+
+.aspect-w-5 {
+  --tw-aspect-w: 5;
+}
+
+.aspect-w-6 {
+  --tw-aspect-w: 6;
+}
+
+.aspect-w-7 {
+  --tw-aspect-w: 7;
+}
+
+.aspect-w-8 {
+  --tw-aspect-w: 8;
+}
+
+.aspect-w-9 {
+  --tw-aspect-w: 9;
+}
+
+.aspect-w-10 {
+  --tw-aspect-w: 10;
+}
+
+.aspect-w-11 {
+  --tw-aspect-w: 11;
+}
+
+.aspect-w-12 {
+  --tw-aspect-w: 12;
+}
+
+.aspect-w-13 {
+  --tw-aspect-w: 13;
+}
+
+.aspect-w-14 {
+  --tw-aspect-w: 14;
+}
+
+.aspect-w-15 {
+  --tw-aspect-w: 15;
+}
+
+.aspect-w-16 {
+  --tw-aspect-w: 16;
+}
+
+.aspect-h-1 {
+  --tw-aspect-h: 1;
+}
+
+.aspect-h-2 {
+  --tw-aspect-h: 2;
+}
+
+.aspect-h-3 {
+  --tw-aspect-h: 3;
+}
+
+.aspect-h-4 {
+  --tw-aspect-h: 4;
+}
+
+.aspect-h-5 {
+  --tw-aspect-h: 5;
+}
+
+.aspect-h-6 {
+  --tw-aspect-h: 6;
+}
+
+.aspect-h-7 {
+  --tw-aspect-h: 7;
+}
+
+.aspect-h-8 {
+  --tw-aspect-h: 8;
+}
+
+.aspect-h-9 {
+  --tw-aspect-h: 9;
+}
+
+.aspect-h-10 {
+  --tw-aspect-h: 10;
+}
+
+.aspect-h-11 {
+  --tw-aspect-h: 11;
+}
+
+.aspect-h-12 {
+  --tw-aspect-h: 12;
+}
+
+.aspect-h-13 {
+  --tw-aspect-h: 13;
+}
+
+.aspect-h-14 {
+  --tw-aspect-h: 14;
+}
+
+.aspect-h-15 {
+  --tw-aspect-h: 15;
+}
+
+.aspect-h-16 {
+  --tw-aspect-h: 16;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -650,13 +838,6 @@ li>a:hover::before {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.separador {
-  background: url("./assets/backgroundImage.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 #loading {
   position: absolute;
   top: 0;
@@ -678,74 +859,294 @@ li>a:hover::before {
 }
 
 #ajedrez {
-  background: url("https://images.unsplash.com/photo-1523875194681-bedd468c58bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+  background: url("./assets/poems-bg/ajedrez.jpg") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #madre {
-  background: url("https://images.unsplash.com/photo-1542385151-efd9000785a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80");
+  background: url("./assets/poems-bg/madre.jpg") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #coffee {
-  background: url("https://images.unsplash.com/photo-1518057111178-44a106bad636?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background: url("./assets/poems-bg/cafe.jpg") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #barrilete {
-  background: url("https://images.unsplash.com/photo-1604861696908-d57e34ee8855?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80");
+  background: url("./assets/poems-bg/barrilete.jpg") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #hechicero {
-  background: url("https://images.unsplash.com/photo-1587330936967-5a220aa6e575?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=693&q=80");
+  background: url("./assets/poems-bg/hechicero.jpg") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #ardillita {
-  background: url("https://images.unsplash.com/photo-1533651180995-3b8dcd33e834?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background: url("./assets/poems-bg/ardillita.jpg") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #abrazame {
-  background: url("https://images.unsplash.com/photo-1488557758410-8f12c8860f11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80");
+  background: url("./assets/poems-bg/abrazame.jpg") no-repeat center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #soldado {
-  background: url("https://images.unsplash.com/photo-1532944276301-9cd8731051fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1067&q=80");
+  background: url("./assets/poems-bg/soldado.jpg") no-repeat center;
   background-size: cover;
   background-position: top;
-  background-repeat: no-repeat;
 }
 
 #maestra {
-  background: url("https://images.unsplash.com/photo-1588075592405-d3d4f0846961?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80");
+  background: url("./assets/poems-bg/maestra.jpg") no-repeat center;
   background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
 }
 
 #tiempo {
-  background: url("./assets/tiempo.jpg");
+  background: url("./assets/poems-bg/tiempo.jpg") no-repeat center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #tierra {
-  background: url("https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1174&q=80");
+  background: url("./assets/poems-bg/tierra.jpg") no-repeat center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+#tango {
+  background: url("./assets/poems-bg/tango.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#navidad {
+  background: url("./assets/poems-bg/navidad.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#reflexion {
+  background: url("./assets/poems-bg/reflexion.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#palabras {
+  background: url("./assets/poems-bg/palabras.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#techo {
+  background: url("./assets/poems-bg/techo.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#elemento {
+  background: url("./assets/poems-bg/elemento.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#poesia {
+  background: url("./assets/poems-bg/poesia.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#bailarina {
+  background: url("./assets/poems-bg/bailarina.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#nostalgia {
+  background: url("./assets/poems-bg/nostalgia.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#ocaso {
+  background: url("./assets/poems-bg/ocaso.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#mujercitas {
+  background: url("./assets/poems-bg/mujercitas.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#navegando {
+  background: url("./assets/poems-bg/navegando.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#rosa-y-agua {
+  background: url("./assets/poems-bg/rosa-y-agua.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#ser {
+  background: url("./assets/poems-bg/ser.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#sed {
+  background: url("./assets/poems-bg/sed.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#aromas {
+  background: url("./assets/poems-bg/aromas.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#burocracia {
+  background: url("./assets/poems-bg/burocracia.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#el-sol-y-la-luna {
+  background: url("./assets/poems-bg/el-sol-y-la-luna.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#niñita {
+  background: url("./assets/poems-bg/niñita.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#mariposa {
+  background: url("./assets/poems-bg/mariposa.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#dime {
+  background: url("./assets/poems-bg/dime.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#impotencia {
+  background: url("./assets/poems-bg/impotencia.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#zapato {
+  background: url("./assets/poems-bg/zapato.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#viejo {
+  background: url("./assets/poems-bg/viejo.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#cautivo {
+  background: url("./assets/poems-bg/cautivo.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#ilusion {
+  background: url("./assets/poems-bg/ilusion.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#alma-purpura {
+  background: url("./assets/poems-bg/alma-purpura.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#tu {
+  background: url("./assets/poems-bg/tu.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#rimas {
+  background: url("./assets/poems-bg/rimas.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#veinte {
+  background: url("./assets/poems-bg/2020.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#escuela {
+  background: url("./assets/poems-bg/escuela.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#rafagas {
+  background: url("./assets/poems-bg/rafagas.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#ilusiones {
+  background: url("./assets/poems-bg/ilusiones.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#acurrucada {
+  background: url("./assets/poems-bg/acurrucada.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#pensamiento {
+  background: url("./assets/poems-bg/pensamiento.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#tuya {
+  background: url("./assets/poems-bg/tuya.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#camino-sin-fin {
+  background: url("./assets/poems-bg/camino-sin-fin.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#me-haces-bien {
+  background: url("./assets/poems-bg/me-haces-bien.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#latidos {
+  background: url("./assets/poems-bg/latidos.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#una-vuelta-mas {
+  background: url("./assets/poems-bg/vuelta.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#el-amor {
+  background: url("./assets/poems-bg/el-amor.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#azucar {
+  background: url("./assets/poems-bg/azucar.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#musa {
+  background: url("./assets/poems-bg/musa.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#destino {
+  background: url("./assets/poems-bg/destino.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#tercer-ojo {
+  background: url("./assets/poems-bg/tercer-ojo.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#te-quiero {
+  background: url("./assets/poems-bg/te-quiero.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#prohibido {
+  background: url("./assets/poems-bg/prohibido.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .autor-img {
@@ -32068,6 +32469,194 @@ li>a:hover::before {
     }
   }
 
+  .sm\:aspect-w-1,
+.sm\:aspect-w-2,
+.sm\:aspect-w-3,
+.sm\:aspect-w-4,
+.sm\:aspect-w-5,
+.sm\:aspect-w-6,
+.sm\:aspect-w-7,
+.sm\:aspect-w-8,
+.sm\:aspect-w-9,
+.sm\:aspect-w-10,
+.sm\:aspect-w-11,
+.sm\:aspect-w-12,
+.sm\:aspect-w-13,
+.sm\:aspect-w-14,
+.sm\:aspect-w-15,
+.sm\:aspect-w-16 {
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  }
+
+  .sm\:aspect-w-1 > *,
+.sm\:aspect-w-2 > *,
+.sm\:aspect-w-3 > *,
+.sm\:aspect-w-4 > *,
+.sm\:aspect-w-5 > *,
+.sm\:aspect-w-6 > *,
+.sm\:aspect-w-7 > *,
+.sm\:aspect-w-8 > *,
+.sm\:aspect-w-9 > *,
+.sm\:aspect-w-10 > *,
+.sm\:aspect-w-11 > *,
+.sm\:aspect-w-12 > *,
+.sm\:aspect-w-13 > *,
+.sm\:aspect-w-14 > *,
+.sm\:aspect-w-15 > *,
+.sm\:aspect-w-16 > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .sm\:aspect-none {
+    position: static;
+    padding-bottom: 0;
+  }
+
+  .sm\:aspect-none > * {
+    position: static;
+    height: auto;
+    width: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  .sm\:aspect-w-1 {
+    --tw-aspect-w: 1;
+  }
+
+  .sm\:aspect-w-2 {
+    --tw-aspect-w: 2;
+  }
+
+  .sm\:aspect-w-3 {
+    --tw-aspect-w: 3;
+  }
+
+  .sm\:aspect-w-4 {
+    --tw-aspect-w: 4;
+  }
+
+  .sm\:aspect-w-5 {
+    --tw-aspect-w: 5;
+  }
+
+  .sm\:aspect-w-6 {
+    --tw-aspect-w: 6;
+  }
+
+  .sm\:aspect-w-7 {
+    --tw-aspect-w: 7;
+  }
+
+  .sm\:aspect-w-8 {
+    --tw-aspect-w: 8;
+  }
+
+  .sm\:aspect-w-9 {
+    --tw-aspect-w: 9;
+  }
+
+  .sm\:aspect-w-10 {
+    --tw-aspect-w: 10;
+  }
+
+  .sm\:aspect-w-11 {
+    --tw-aspect-w: 11;
+  }
+
+  .sm\:aspect-w-12 {
+    --tw-aspect-w: 12;
+  }
+
+  .sm\:aspect-w-13 {
+    --tw-aspect-w: 13;
+  }
+
+  .sm\:aspect-w-14 {
+    --tw-aspect-w: 14;
+  }
+
+  .sm\:aspect-w-15 {
+    --tw-aspect-w: 15;
+  }
+
+  .sm\:aspect-w-16 {
+    --tw-aspect-w: 16;
+  }
+
+  .sm\:aspect-h-1 {
+    --tw-aspect-h: 1;
+  }
+
+  .sm\:aspect-h-2 {
+    --tw-aspect-h: 2;
+  }
+
+  .sm\:aspect-h-3 {
+    --tw-aspect-h: 3;
+  }
+
+  .sm\:aspect-h-4 {
+    --tw-aspect-h: 4;
+  }
+
+  .sm\:aspect-h-5 {
+    --tw-aspect-h: 5;
+  }
+
+  .sm\:aspect-h-6 {
+    --tw-aspect-h: 6;
+  }
+
+  .sm\:aspect-h-7 {
+    --tw-aspect-h: 7;
+  }
+
+  .sm\:aspect-h-8 {
+    --tw-aspect-h: 8;
+  }
+
+  .sm\:aspect-h-9 {
+    --tw-aspect-h: 9;
+  }
+
+  .sm\:aspect-h-10 {
+    --tw-aspect-h: 10;
+  }
+
+  .sm\:aspect-h-11 {
+    --tw-aspect-h: 11;
+  }
+
+  .sm\:aspect-h-12 {
+    --tw-aspect-h: 12;
+  }
+
+  .sm\:aspect-h-13 {
+    --tw-aspect-h: 13;
+  }
+
+  .sm\:aspect-h-14 {
+    --tw-aspect-h: 14;
+  }
+
+  .sm\:aspect-h-15 {
+    --tw-aspect-h: 15;
+  }
+
+  .sm\:aspect-h-16 {
+    --tw-aspect-h: 16;
+  }
+
   .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -63177,6 +63766,194 @@ li>a:hover::before {
     .md\:container {
       max-width: 1536px;
     }
+  }
+
+  .md\:aspect-w-1,
+.md\:aspect-w-2,
+.md\:aspect-w-3,
+.md\:aspect-w-4,
+.md\:aspect-w-5,
+.md\:aspect-w-6,
+.md\:aspect-w-7,
+.md\:aspect-w-8,
+.md\:aspect-w-9,
+.md\:aspect-w-10,
+.md\:aspect-w-11,
+.md\:aspect-w-12,
+.md\:aspect-w-13,
+.md\:aspect-w-14,
+.md\:aspect-w-15,
+.md\:aspect-w-16 {
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  }
+
+  .md\:aspect-w-1 > *,
+.md\:aspect-w-2 > *,
+.md\:aspect-w-3 > *,
+.md\:aspect-w-4 > *,
+.md\:aspect-w-5 > *,
+.md\:aspect-w-6 > *,
+.md\:aspect-w-7 > *,
+.md\:aspect-w-8 > *,
+.md\:aspect-w-9 > *,
+.md\:aspect-w-10 > *,
+.md\:aspect-w-11 > *,
+.md\:aspect-w-12 > *,
+.md\:aspect-w-13 > *,
+.md\:aspect-w-14 > *,
+.md\:aspect-w-15 > *,
+.md\:aspect-w-16 > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .md\:aspect-none {
+    position: static;
+    padding-bottom: 0;
+  }
+
+  .md\:aspect-none > * {
+    position: static;
+    height: auto;
+    width: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  .md\:aspect-w-1 {
+    --tw-aspect-w: 1;
+  }
+
+  .md\:aspect-w-2 {
+    --tw-aspect-w: 2;
+  }
+
+  .md\:aspect-w-3 {
+    --tw-aspect-w: 3;
+  }
+
+  .md\:aspect-w-4 {
+    --tw-aspect-w: 4;
+  }
+
+  .md\:aspect-w-5 {
+    --tw-aspect-w: 5;
+  }
+
+  .md\:aspect-w-6 {
+    --tw-aspect-w: 6;
+  }
+
+  .md\:aspect-w-7 {
+    --tw-aspect-w: 7;
+  }
+
+  .md\:aspect-w-8 {
+    --tw-aspect-w: 8;
+  }
+
+  .md\:aspect-w-9 {
+    --tw-aspect-w: 9;
+  }
+
+  .md\:aspect-w-10 {
+    --tw-aspect-w: 10;
+  }
+
+  .md\:aspect-w-11 {
+    --tw-aspect-w: 11;
+  }
+
+  .md\:aspect-w-12 {
+    --tw-aspect-w: 12;
+  }
+
+  .md\:aspect-w-13 {
+    --tw-aspect-w: 13;
+  }
+
+  .md\:aspect-w-14 {
+    --tw-aspect-w: 14;
+  }
+
+  .md\:aspect-w-15 {
+    --tw-aspect-w: 15;
+  }
+
+  .md\:aspect-w-16 {
+    --tw-aspect-w: 16;
+  }
+
+  .md\:aspect-h-1 {
+    --tw-aspect-h: 1;
+  }
+
+  .md\:aspect-h-2 {
+    --tw-aspect-h: 2;
+  }
+
+  .md\:aspect-h-3 {
+    --tw-aspect-h: 3;
+  }
+
+  .md\:aspect-h-4 {
+    --tw-aspect-h: 4;
+  }
+
+  .md\:aspect-h-5 {
+    --tw-aspect-h: 5;
+  }
+
+  .md\:aspect-h-6 {
+    --tw-aspect-h: 6;
+  }
+
+  .md\:aspect-h-7 {
+    --tw-aspect-h: 7;
+  }
+
+  .md\:aspect-h-8 {
+    --tw-aspect-h: 8;
+  }
+
+  .md\:aspect-h-9 {
+    --tw-aspect-h: 9;
+  }
+
+  .md\:aspect-h-10 {
+    --tw-aspect-h: 10;
+  }
+
+  .md\:aspect-h-11 {
+    --tw-aspect-h: 11;
+  }
+
+  .md\:aspect-h-12 {
+    --tw-aspect-h: 12;
+  }
+
+  .md\:aspect-h-13 {
+    --tw-aspect-h: 13;
+  }
+
+  .md\:aspect-h-14 {
+    --tw-aspect-h: 14;
+  }
+
+  .md\:aspect-h-15 {
+    --tw-aspect-h: 15;
+  }
+
+  .md\:aspect-h-16 {
+    --tw-aspect-h: 16;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -94290,6 +95067,194 @@ li>a:hover::before {
     }
   }
 
+  .lg\:aspect-w-1,
+.lg\:aspect-w-2,
+.lg\:aspect-w-3,
+.lg\:aspect-w-4,
+.lg\:aspect-w-5,
+.lg\:aspect-w-6,
+.lg\:aspect-w-7,
+.lg\:aspect-w-8,
+.lg\:aspect-w-9,
+.lg\:aspect-w-10,
+.lg\:aspect-w-11,
+.lg\:aspect-w-12,
+.lg\:aspect-w-13,
+.lg\:aspect-w-14,
+.lg\:aspect-w-15,
+.lg\:aspect-w-16 {
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  }
+
+  .lg\:aspect-w-1 > *,
+.lg\:aspect-w-2 > *,
+.lg\:aspect-w-3 > *,
+.lg\:aspect-w-4 > *,
+.lg\:aspect-w-5 > *,
+.lg\:aspect-w-6 > *,
+.lg\:aspect-w-7 > *,
+.lg\:aspect-w-8 > *,
+.lg\:aspect-w-9 > *,
+.lg\:aspect-w-10 > *,
+.lg\:aspect-w-11 > *,
+.lg\:aspect-w-12 > *,
+.lg\:aspect-w-13 > *,
+.lg\:aspect-w-14 > *,
+.lg\:aspect-w-15 > *,
+.lg\:aspect-w-16 > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .lg\:aspect-none {
+    position: static;
+    padding-bottom: 0;
+  }
+
+  .lg\:aspect-none > * {
+    position: static;
+    height: auto;
+    width: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  .lg\:aspect-w-1 {
+    --tw-aspect-w: 1;
+  }
+
+  .lg\:aspect-w-2 {
+    --tw-aspect-w: 2;
+  }
+
+  .lg\:aspect-w-3 {
+    --tw-aspect-w: 3;
+  }
+
+  .lg\:aspect-w-4 {
+    --tw-aspect-w: 4;
+  }
+
+  .lg\:aspect-w-5 {
+    --tw-aspect-w: 5;
+  }
+
+  .lg\:aspect-w-6 {
+    --tw-aspect-w: 6;
+  }
+
+  .lg\:aspect-w-7 {
+    --tw-aspect-w: 7;
+  }
+
+  .lg\:aspect-w-8 {
+    --tw-aspect-w: 8;
+  }
+
+  .lg\:aspect-w-9 {
+    --tw-aspect-w: 9;
+  }
+
+  .lg\:aspect-w-10 {
+    --tw-aspect-w: 10;
+  }
+
+  .lg\:aspect-w-11 {
+    --tw-aspect-w: 11;
+  }
+
+  .lg\:aspect-w-12 {
+    --tw-aspect-w: 12;
+  }
+
+  .lg\:aspect-w-13 {
+    --tw-aspect-w: 13;
+  }
+
+  .lg\:aspect-w-14 {
+    --tw-aspect-w: 14;
+  }
+
+  .lg\:aspect-w-15 {
+    --tw-aspect-w: 15;
+  }
+
+  .lg\:aspect-w-16 {
+    --tw-aspect-w: 16;
+  }
+
+  .lg\:aspect-h-1 {
+    --tw-aspect-h: 1;
+  }
+
+  .lg\:aspect-h-2 {
+    --tw-aspect-h: 2;
+  }
+
+  .lg\:aspect-h-3 {
+    --tw-aspect-h: 3;
+  }
+
+  .lg\:aspect-h-4 {
+    --tw-aspect-h: 4;
+  }
+
+  .lg\:aspect-h-5 {
+    --tw-aspect-h: 5;
+  }
+
+  .lg\:aspect-h-6 {
+    --tw-aspect-h: 6;
+  }
+
+  .lg\:aspect-h-7 {
+    --tw-aspect-h: 7;
+  }
+
+  .lg\:aspect-h-8 {
+    --tw-aspect-h: 8;
+  }
+
+  .lg\:aspect-h-9 {
+    --tw-aspect-h: 9;
+  }
+
+  .lg\:aspect-h-10 {
+    --tw-aspect-h: 10;
+  }
+
+  .lg\:aspect-h-11 {
+    --tw-aspect-h: 11;
+  }
+
+  .lg\:aspect-h-12 {
+    --tw-aspect-h: 12;
+  }
+
+  .lg\:aspect-h-13 {
+    --tw-aspect-h: 13;
+  }
+
+  .lg\:aspect-h-14 {
+    --tw-aspect-h: 14;
+  }
+
+  .lg\:aspect-h-15 {
+    --tw-aspect-h: 15;
+  }
+
+  .lg\:aspect-h-16 {
+    --tw-aspect-h: 16;
+  }
+
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -125401,6 +126366,194 @@ li>a:hover::before {
     }
   }
 
+  .xl\:aspect-w-1,
+.xl\:aspect-w-2,
+.xl\:aspect-w-3,
+.xl\:aspect-w-4,
+.xl\:aspect-w-5,
+.xl\:aspect-w-6,
+.xl\:aspect-w-7,
+.xl\:aspect-w-8,
+.xl\:aspect-w-9,
+.xl\:aspect-w-10,
+.xl\:aspect-w-11,
+.xl\:aspect-w-12,
+.xl\:aspect-w-13,
+.xl\:aspect-w-14,
+.xl\:aspect-w-15,
+.xl\:aspect-w-16 {
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  }
+
+  .xl\:aspect-w-1 > *,
+.xl\:aspect-w-2 > *,
+.xl\:aspect-w-3 > *,
+.xl\:aspect-w-4 > *,
+.xl\:aspect-w-5 > *,
+.xl\:aspect-w-6 > *,
+.xl\:aspect-w-7 > *,
+.xl\:aspect-w-8 > *,
+.xl\:aspect-w-9 > *,
+.xl\:aspect-w-10 > *,
+.xl\:aspect-w-11 > *,
+.xl\:aspect-w-12 > *,
+.xl\:aspect-w-13 > *,
+.xl\:aspect-w-14 > *,
+.xl\:aspect-w-15 > *,
+.xl\:aspect-w-16 > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .xl\:aspect-none {
+    position: static;
+    padding-bottom: 0;
+  }
+
+  .xl\:aspect-none > * {
+    position: static;
+    height: auto;
+    width: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  .xl\:aspect-w-1 {
+    --tw-aspect-w: 1;
+  }
+
+  .xl\:aspect-w-2 {
+    --tw-aspect-w: 2;
+  }
+
+  .xl\:aspect-w-3 {
+    --tw-aspect-w: 3;
+  }
+
+  .xl\:aspect-w-4 {
+    --tw-aspect-w: 4;
+  }
+
+  .xl\:aspect-w-5 {
+    --tw-aspect-w: 5;
+  }
+
+  .xl\:aspect-w-6 {
+    --tw-aspect-w: 6;
+  }
+
+  .xl\:aspect-w-7 {
+    --tw-aspect-w: 7;
+  }
+
+  .xl\:aspect-w-8 {
+    --tw-aspect-w: 8;
+  }
+
+  .xl\:aspect-w-9 {
+    --tw-aspect-w: 9;
+  }
+
+  .xl\:aspect-w-10 {
+    --tw-aspect-w: 10;
+  }
+
+  .xl\:aspect-w-11 {
+    --tw-aspect-w: 11;
+  }
+
+  .xl\:aspect-w-12 {
+    --tw-aspect-w: 12;
+  }
+
+  .xl\:aspect-w-13 {
+    --tw-aspect-w: 13;
+  }
+
+  .xl\:aspect-w-14 {
+    --tw-aspect-w: 14;
+  }
+
+  .xl\:aspect-w-15 {
+    --tw-aspect-w: 15;
+  }
+
+  .xl\:aspect-w-16 {
+    --tw-aspect-w: 16;
+  }
+
+  .xl\:aspect-h-1 {
+    --tw-aspect-h: 1;
+  }
+
+  .xl\:aspect-h-2 {
+    --tw-aspect-h: 2;
+  }
+
+  .xl\:aspect-h-3 {
+    --tw-aspect-h: 3;
+  }
+
+  .xl\:aspect-h-4 {
+    --tw-aspect-h: 4;
+  }
+
+  .xl\:aspect-h-5 {
+    --tw-aspect-h: 5;
+  }
+
+  .xl\:aspect-h-6 {
+    --tw-aspect-h: 6;
+  }
+
+  .xl\:aspect-h-7 {
+    --tw-aspect-h: 7;
+  }
+
+  .xl\:aspect-h-8 {
+    --tw-aspect-h: 8;
+  }
+
+  .xl\:aspect-h-9 {
+    --tw-aspect-h: 9;
+  }
+
+  .xl\:aspect-h-10 {
+    --tw-aspect-h: 10;
+  }
+
+  .xl\:aspect-h-11 {
+    --tw-aspect-h: 11;
+  }
+
+  .xl\:aspect-h-12 {
+    --tw-aspect-h: 12;
+  }
+
+  .xl\:aspect-h-13 {
+    --tw-aspect-h: 13;
+  }
+
+  .xl\:aspect-h-14 {
+    --tw-aspect-h: 14;
+  }
+
+  .xl\:aspect-h-15 {
+    --tw-aspect-h: 15;
+  }
+
+  .xl\:aspect-h-16 {
+    --tw-aspect-h: 16;
+  }
+
   .xl\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -156510,6 +157663,194 @@ li>a:hover::before {
     .\32xl\:container {
       max-width: 1536px;
     }
+  }
+
+  .\32xl\:aspect-w-1,
+.\32xl\:aspect-w-2,
+.\32xl\:aspect-w-3,
+.\32xl\:aspect-w-4,
+.\32xl\:aspect-w-5,
+.\32xl\:aspect-w-6,
+.\32xl\:aspect-w-7,
+.\32xl\:aspect-w-8,
+.\32xl\:aspect-w-9,
+.\32xl\:aspect-w-10,
+.\32xl\:aspect-w-11,
+.\32xl\:aspect-w-12,
+.\32xl\:aspect-w-13,
+.\32xl\:aspect-w-14,
+.\32xl\:aspect-w-15,
+.\32xl\:aspect-w-16 {
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  }
+
+  .\32xl\:aspect-w-1 > *,
+.\32xl\:aspect-w-2 > *,
+.\32xl\:aspect-w-3 > *,
+.\32xl\:aspect-w-4 > *,
+.\32xl\:aspect-w-5 > *,
+.\32xl\:aspect-w-6 > *,
+.\32xl\:aspect-w-7 > *,
+.\32xl\:aspect-w-8 > *,
+.\32xl\:aspect-w-9 > *,
+.\32xl\:aspect-w-10 > *,
+.\32xl\:aspect-w-11 > *,
+.\32xl\:aspect-w-12 > *,
+.\32xl\:aspect-w-13 > *,
+.\32xl\:aspect-w-14 > *,
+.\32xl\:aspect-w-15 > *,
+.\32xl\:aspect-w-16 > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .\32xl\:aspect-none {
+    position: static;
+    padding-bottom: 0;
+  }
+
+  .\32xl\:aspect-none > * {
+    position: static;
+    height: auto;
+    width: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  .\32xl\:aspect-w-1 {
+    --tw-aspect-w: 1;
+  }
+
+  .\32xl\:aspect-w-2 {
+    --tw-aspect-w: 2;
+  }
+
+  .\32xl\:aspect-w-3 {
+    --tw-aspect-w: 3;
+  }
+
+  .\32xl\:aspect-w-4 {
+    --tw-aspect-w: 4;
+  }
+
+  .\32xl\:aspect-w-5 {
+    --tw-aspect-w: 5;
+  }
+
+  .\32xl\:aspect-w-6 {
+    --tw-aspect-w: 6;
+  }
+
+  .\32xl\:aspect-w-7 {
+    --tw-aspect-w: 7;
+  }
+
+  .\32xl\:aspect-w-8 {
+    --tw-aspect-w: 8;
+  }
+
+  .\32xl\:aspect-w-9 {
+    --tw-aspect-w: 9;
+  }
+
+  .\32xl\:aspect-w-10 {
+    --tw-aspect-w: 10;
+  }
+
+  .\32xl\:aspect-w-11 {
+    --tw-aspect-w: 11;
+  }
+
+  .\32xl\:aspect-w-12 {
+    --tw-aspect-w: 12;
+  }
+
+  .\32xl\:aspect-w-13 {
+    --tw-aspect-w: 13;
+  }
+
+  .\32xl\:aspect-w-14 {
+    --tw-aspect-w: 14;
+  }
+
+  .\32xl\:aspect-w-15 {
+    --tw-aspect-w: 15;
+  }
+
+  .\32xl\:aspect-w-16 {
+    --tw-aspect-w: 16;
+  }
+
+  .\32xl\:aspect-h-1 {
+    --tw-aspect-h: 1;
+  }
+
+  .\32xl\:aspect-h-2 {
+    --tw-aspect-h: 2;
+  }
+
+  .\32xl\:aspect-h-3 {
+    --tw-aspect-h: 3;
+  }
+
+  .\32xl\:aspect-h-4 {
+    --tw-aspect-h: 4;
+  }
+
+  .\32xl\:aspect-h-5 {
+    --tw-aspect-h: 5;
+  }
+
+  .\32xl\:aspect-h-6 {
+    --tw-aspect-h: 6;
+  }
+
+  .\32xl\:aspect-h-7 {
+    --tw-aspect-h: 7;
+  }
+
+  .\32xl\:aspect-h-8 {
+    --tw-aspect-h: 8;
+  }
+
+  .\32xl\:aspect-h-9 {
+    --tw-aspect-h: 9;
+  }
+
+  .\32xl\:aspect-h-10 {
+    --tw-aspect-h: 10;
+  }
+
+  .\32xl\:aspect-h-11 {
+    --tw-aspect-h: 11;
+  }
+
+  .\32xl\:aspect-h-12 {
+    --tw-aspect-h: 12;
+  }
+
+  .\32xl\:aspect-h-13 {
+    --tw-aspect-h: 13;
+  }
+
+  .\32xl\:aspect-h-14 {
+    --tw-aspect-h: 14;
+  }
+
+  .\32xl\:aspect-h-15 {
+    --tw-aspect-h: 15;
+  }
+
+  .\32xl\:aspect-h-16 {
+    --tw-aspect-h: 16;
   }
 
   .\32xl\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
