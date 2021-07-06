@@ -1,4 +1,4 @@
-html {
+/* html {
     scroll-behavior: smooth;
 }
 
@@ -81,7 +81,7 @@ li>a:hover::before {
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
-    /* Safari */
+   
     animation: spin 2s linear infinite;
 }
 
@@ -426,4 +426,10 @@ li>a:hover::before {
     color: white;
 
     font-family: "Mate SC";
+} */
+
+
+.test {
+    min-height: 1080px;
+    min-width: 720px;
 }
