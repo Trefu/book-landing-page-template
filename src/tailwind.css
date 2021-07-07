@@ -1,30 +1,35 @@
-/* html {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
     scroll-behavior: smooth;
-}
+  }
 
-*:focus {
+  *:focus {
     outline: none;
-}
+  }
 
-body {
+  body {
     font-family: "Mate SC", serif;
-}
+  }
 
-.font-MATE {
+  .font-MATE {
     font-family: "Mate SC", serif;
-}
+  }
 
-li>a {
+  li>a {
     position: relative;
     color: rgb(255, 255, 255);
     text-decoration: none;
-}
+  }
 
-:focus {
+  :focus {
     outline: none;
-}
+  }
 
-li>a::before {
+  li>a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -35,26 +40,26 @@ li>a::before {
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
-}
+  }
 
-li>a:hover::before {
+  li>a:hover::before {
     visibility: visible;
     transform: scaleX(1);
-}
+  }
 
-.font-poem {
+  .font-poem {
     font-family: "Dancing Script", cursive;
-}
+  }
 
-#headerPrincipal {
+  #headerPrincipal {
     background: url("./assets/backgroundImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-}
+  }
 
 
-#verseContainer {
+  #verseContainer {
     font-family: "Dancing Script", cursive;
     background: rgba(0, 0, 0, 0.235);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -62,338 +67,338 @@ li>a:hover::before {
     -webkit-backdrop-filter: blur(13px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-}
+  }
 
 
-#loading {
+  #loading {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1000;
-}
+  }
 
-.loader {
+  .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid #3498db;
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
-   
+    /* Safari */
     animation: spin 2s linear infinite;
-}
+  }
 
-#ajedrez {
+  #ajedrez {
     background: url("./assets/poems-bg/ajedrez.jpg") no-repeat center;
     background-size: cover;
 
-}
+  }
 
-#madre {
+  #madre {
     background: url("./assets/poems-bg/madre.jpg") no-repeat center;
     background-size: cover;
 
-}
+  }
 
-#coffee {
+  #coffee {
     background: url("./assets/poems-bg/cafe.jpg") no-repeat center;
     background-size: cover;
 
 
-}
+  }
 
-#barrilete {
+  #barrilete {
     background: url("./assets/poems-bg/barrilete.jpg") no-repeat center;
     background-size: cover;
 
 
-}
+  }
 
-#hechicero {
+  #hechicero {
     background: url("./assets/poems-bg/hechicero.jpg") no-repeat center;
     background-size: cover;
 
 
-}
+  }
 
-#ardillita {
+  #ardillita {
     background: url("./assets/poems-bg/ardillita.jpg") no-repeat center;
     background-size: cover;
 
-}
+  }
 
-#abrazame {
+  #abrazame {
     background: url("./assets/poems-bg/abrazame.jpg") no-repeat center;
     background-size: cover;
 
 
-}
+  }
 
-#soldado {
+  #soldado {
     background: url("./assets/poems-bg/soldado.jpg") no-repeat center;
     background-size: cover;
     background-position: top;
 
-}
+  }
 
-#maestra {
+  #maestra {
     background: url("./assets/poems-bg/maestra.jpg") no-repeat center;
     background-size: cover;
 
-}
+  }
 
-#tiempo {
+  #tiempo {
     background: url("./assets/poems-bg/tiempo.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#tierra {
+  #tierra {
     background: url("./assets/poems-bg/tierra.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#tango {
+  #tango {
     background: url("./assets/poems-bg/tango.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#navidad {
+  #navidad {
     background: url("./assets/poems-bg/navidad.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#reflexion {
+  #reflexion {
     background: url("./assets/poems-bg/reflexion.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#palabras {
+  #palabras {
     background: url("./assets/poems-bg/palabras.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#techo {
+  #techo {
     background: url("./assets/poems-bg/techo.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#elemento {
+  #elemento {
     background: url("./assets/poems-bg/elemento.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#poesia {
+  #poesia {
     background: url("./assets/poems-bg/poesia.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#bailarina {
+  #bailarina {
     background: url("./assets/poems-bg/bailarina.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#nostalgia {
+  #nostalgia {
     background: url("./assets/poems-bg/nostalgia.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#ocaso {
+  #ocaso {
     background: url("./assets/poems-bg/ocaso.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#mujercitas {
+  #mujercitas {
     background: url("./assets/poems-bg/mujercitas.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#navegando {
+  #navegando {
     background: url("./assets/poems-bg/navegando.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#rosa-y-agua {
+  #rosa-y-agua {
     background: url("./assets/poems-bg/rosa-y-agua.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#ser {
+  #ser {
     background: url("./assets/poems-bg/ser.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#sed {
+  #sed {
     background: url("./assets/poems-bg/sed.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#aromas {
+  #aromas {
     background: url("./assets/poems-bg/aromas.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#burocracia {
+  #burocracia {
     background: url("./assets/poems-bg/burocracia.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#el-sol-y-la-luna {
+  #el-sol-y-la-luna {
     background: url("./assets/poems-bg/el-sol-y-la-luna.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#niñita {
+  #niñita {
     background: url("./assets/poems-bg/niñita.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#mariposa {
+  #mariposa {
     background: url("./assets/poems-bg/mariposa.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#dime {
+  #dime {
     background: url("./assets/poems-bg/dime.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#impotencia {
+  #impotencia {
     background: url("./assets/poems-bg/impotencia.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#zapato {
+  #zapato {
     background: url("./assets/poems-bg/zapato.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#viejo {
+  #viejo {
     background: url("./assets/poems-bg/viejo.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#cautivo {
+  #cautivo {
     background: url("./assets/poems-bg/cautivo.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#ilusion {
+  #ilusion {
     background: url("./assets/poems-bg/ilusion.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#alma-purpura {
+  #alma-purpura {
     background: url("./assets/poems-bg/alma-purpura.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#tu {
+  #tu {
     background: url("./assets/poems-bg/tu.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#rimas {
+  #rimas {
     background: url("./assets/poems-bg/rimas.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#veinte {
+  #veinte {
     background: url("./assets/poems-bg/2020.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#escuela {
+  #escuela {
     background: url("./assets/poems-bg/escuela.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#rafagas {
+  #rafagas {
     background: url("./assets/poems-bg/rafagas.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#ilusiones {
+  #ilusiones {
     background: url("./assets/poems-bg/ilusiones.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#acurrucada {
+  #acurrucada {
     background: url("./assets/poems-bg/acurrucada.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#pensamiento {
+  #pensamiento {
     background: url("./assets/poems-bg/pensamiento.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#tuya {
+  #tuya {
     background: url("./assets/poems-bg/tuya.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#camino-sin-fin {
+  #camino-sin-fin {
     background: url("./assets/poems-bg/camino-sin-fin.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#me-haces-bien {
+  #me-haces-bien {
     background: url("./assets/poems-bg/me-haces-bien.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#latidos {
+  #latidos {
     background: url("./assets/poems-bg/latidos.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#una-vuelta-mas {
+  #una-vuelta-mas {
     background: url("./assets/poems-bg/vuelta.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#el-amor {
+  #el-amor {
     background: url("./assets/poems-bg/el-amor.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#azucar {
+  #azucar {
     background: url("./assets/poems-bg/azucar.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#musa {
+  #musa {
     background: url("./assets/poems-bg/musa.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#destino {
+  #destino {
     background: url("./assets/poems-bg/destino.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#tercer-ojo {
+  #tercer-ojo {
     background: url("./assets/poems-bg/tercer-ojo.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#te-quiero {
+  #te-quiero {
     background: url("./assets/poems-bg/te-quiero.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-#prohibido {
+  #prohibido {
     background: url("./assets/poems-bg/prohibido.jpg") no-repeat center;
     background-size: cover;
-}
+  }
 
-.autor-img {
+  .autor-img {
     background-image: url('./assets/autor.jpg');
-}
+  }
 
-.poem-container::before {
+  .poem-container::before {
     content: "";
     display: block;
     height: 100%;
@@ -403,33 +408,29 @@ li>a:hover::before {
     width: 100%;
     background-color: rgba(36, 36, 36, 0.8);
     z-index: -1;
-}
+  }
 
-.poem-container {
+  .poem-container {
     padding-bottom: 2rem;
     position: relative;
     z-index: 2;
     font-family: "Dancing Script";
     user-select: none;
 
-}
+  }
 
-.poem-container>p:nth-child(2) {
+  .poem-container>p:nth-child(2) {
     margin-bottom: 2rem;
 
-}
+  }
 
-.autor-name:after {
+  .autor-name:after {
     content: "Buenos Aires,Argentina";
     font-size: 1rem;
     display: block;
     color: white;
 
     font-family: "Mate SC";
-} */
+  }
 
-
-.test {
-    min-height: 1080px;
-    min-width: 720px;
 }
