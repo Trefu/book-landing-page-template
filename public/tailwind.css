@@ -995,6 +995,74 @@ li>a:hover::before {
   font-family: "Mate SC";
 }
 
+.logo {
+  display: none;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(252, 211, 77, var(--tw-text-opacity))
+}
+
+.logo:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.logo {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+@media (min-width: 768px) {
+  .logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.ul-navbar {
+  position: absolute;
+  width: 100vw;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform-origin: top;
+  --tw-scale-y: 0;
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  transition-duration: 300ms
+}
+
+@media (min-width: 768px) {
+  .ul-navbar {
+    position: static;
+    display: flex;
+    width: auto;
+    transform: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+  }
+}
+
 .container {
   width: 100%;
 }

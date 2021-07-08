@@ -433,4 +433,11 @@
     font-family: "Mate SC";
   }
 
+  .logo {
+    @apply transition duration-700 ease-in text-lg md:text-2xl hidden md:inline-block text-yellow-300 hover:text-white
+  }
+
+  .ul-navbar {
+    @apply absolute md:static w-screen md:w-auto origin-top scale-y-0 duration-300 md:flex px-4 py-0 md:py-2 text-white font-semibold md:font-bold bg-black md:transform-none transform
+  }
 }
