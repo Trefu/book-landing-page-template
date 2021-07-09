@@ -1,7 +1,10 @@
 // tailwind.config.js
 module.exports = {
-  purge: ["./public/*.html"],
 
+  purge: {
+    enabled: true,
+    content: ["./public/*.html", "./public/poemario/*.html"]
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
