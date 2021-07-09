@@ -2,23 +2,21 @@ const toggleBtn = document.getElementById("toggleBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 const VERSE_HEADER = document.getElementById("verse");
 const navToggle = document.getElementsByClassName("toggle");
+const BTNS_NAVBAR = document.getElementsByClassName("btn-navbar");
 
 toggleBtn.addEventListener("click", () => {
-
   for (let i = 0; i < navToggle.length; i++) {
     navToggle.item(i).classList.toggle("hidden");
   }
   mobileMenu.classList.toggle("transform");
 });
 
-const BTNS_NAVBAR = document.getElementsByClassName("btn-navbar");
 
 Array.from(BTNS_NAVBAR).forEach((el) => {
   el.addEventListener("click", () => {
     toggleBtn.click()
   })
 });
-
 
 
 const fadeOutHeader = () => {

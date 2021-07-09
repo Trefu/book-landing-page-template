@@ -25,73 +25,53 @@
 	<div class="bg-black  sticky top-0  z-40">
 
 
-		<nav id="navbar" class="container mx-auto md:flex justify-between bg-black">
+		<nav id="navbar" class="z-50 container mx-auto md:flex justify-between bg-black">
 			<div class="flex justify-end md:hidden">
-				<button id="toggleBtn" class="focus:outline-none focus:ring-1 focus:ring-white p-2 m-2">
+				<div id="toggleBtn" class="cursor-pointer focus:outline-none focus:ring-1 focus:ring-white p-2 m-2">
 					<img class="toggle block" src="../assets/Open.png" width="35" height="35"
 						alt="icono para abrir barra de navegacion" />
 					<img class="toggle hidden" src="../assets/Close.png" width="35" height="35"
 						alt="icono para cerrar barra de navegacion" />
-				</button>
+				</div>
 			</div>
-			<a href="#" class="
-          ml-4
-          text-lg md:text-2xl
-          hidden
-          md:inline-block
-          text-yellow-300
-          transition
-          duration-600
-          ease-in
-          hover:text-white
-          py-4
-        ">Mirtha Gladys Álvarez</a>
-			<ul id="mobileMenu" class="
-          absolute
-          md:static
-          w-screen
-          md:w-auto
-          origin-top
-          scale-y-0
-          duration-300
-          md:flex
-          px-4
-          py-0
-          md:py-2
-          text-indigo-100
-          font-semibold
-          md:font-bold
-          bg-black
-          md:transform-none
-          transform
-        ">
 
+			<a href="#headerPrincipal" class="ml-4 self-center logo">
+				Mirtha Gladys Álvarez</a>
+			<ul id="mobileMenu" class="ul-navbar">
 				<li class="md:ml-4">
-					<a class="block	py-2 md:px-2 transition	duration-300 ease-inhover:text-yellow-300 btn-navbar
-            " href="../index.html">
+					<a class="
+					block py-2 md:px-2 transition duration-300 ease-in hover:text-yellow-300 btn-navbar" href="../index.html">
 						Inicio
 					</a>
 				</li>
 				<li class="md:ml-4">
-					<a class="block py-2 md:px-2 transition duration-300 ease-in hover:text-yellow-300 btn-navbar
-            " href="../index.html#sobre">
+					<a class="
+					block py-2 md:px-2 transition duration-300 ease-in hover:text-yellow-300 btn-navbar" href="../index.html#sobre">
 						Sobre
 					</a>
 				</li>
+
 				<li class="md:ml-4">
-					<a class="
-              block
-              py-2
-              md:px-2
-              transition
-              duration-300
-              ease-in
-              hover:text-yellow-300
-              btn-navbar
-            " href="#footer">
+					<a class="block py-2 md:px-2 transition duration-300 ease-in hover:text-yellow-300 btn-navbar"
+						href="#">
+						Poemas
+					</a>
+				</li>
+
+				<li class="md:ml-4">
+					<a class="block py-2 md:px-2 transition duration-300 ease-in hover:text-yellow-300 btn-navbar
+				  " href="../index.html#noticias">
+						Noticias
+					</a>
+				</li>
+
+				<li class="md:ml-4">
+					<a class="block py-2 md:px-2 transition duration-300 ease-in hover:text-yellow-300 btn-navbar
+				  " href="#contacto">
 						Contacto
 					</a>
 				</li>
+
 
 			</ul>
 		</nav>
@@ -1576,31 +1556,22 @@
 
 
 
-		<footer class="bg-black mt-20 " id="footer">
+		<footer class="bg-black mt-20" id="contacto">
 
-			<div class="container mx-auto pt-8 pb-4 text-center md:text-left">
+			<div class="container mx-auto pt-8 pb-4 md:text-center ml-4 md:ml-0">
 
 				<div class="flex flex-wrap overflow-hidden sm:-mx-1 md:-mx-px lg:-mx-2 xl:-mx-2">
 
 					<div
 						class="w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
 
-						<a href="#" class="
-				ml-4
-				text-2xl
-				text-yellow-300
-				transition
-				duration-600
-				ease-in
-				hover:text-white
-				py-4
-			  ">Tus huellas en mi tinta</a>
+						<a href="#headerPrincipal" class="logo">Tus huellas en mi tinta</a>
 					</div>
 
 					<div
-						class="w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
+						class=" w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
 
-						<h4 class="text-white">Importante</h4>
+						<h4 class="text-yellow-400">Importante</h4>
 						<ul class="nav navbar-nav">
 							<li id="navi-2" class="leading-7 text-sm">
 								<a class="text-white  text-small" target="blank"
@@ -1618,7 +1589,7 @@
 					<div
 						class="w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
 
-						<h4 class="text-white">Info</h4>
+						<h4 class="text-yellow-400">Info</h4>
 						<ul class="">
 							<li id="navi-2" class="leading-7 text-sm">
 								<a class="text-white  text-small" target="blank"
@@ -1634,7 +1605,7 @@
 					<div
 						class="w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-px md:px-px md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4 pb-6">
 
-						<h4 class="text-white">Diseño</h4>
+						<h4 class="text-yellow-400">Diseño</h4>
 						<ul class="">
 							<li id="navi-2" class="leading-7 text-sm">
 								<a class="text-white  text-small" target="blank"
