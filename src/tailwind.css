@@ -452,7 +452,8 @@
   #carousel-9:checked~.control-9,
   #carousel-10:checked~.control-10,
   #carousel-11:checked~.control-11,
-  #carousel-12:checked~.control-12 {
+  #carousel-12:checked~.control-12,
+  #carousel-13:checked~.control-13 {
     display: block;
   }
 
@@ -479,8 +480,9 @@
   #carousel-9:checked~.control-9~.carousel-indicators li:nth-child(9) .carousel-bullet,
   #carousel-10:checked~.control-10~.carousel-indicators li:nth-child(10) .carousel-bullet,
   #carousel-11:checked~.control-11~.carousel-indicators li:nth-child(11) .carousel-bullet,
-  #carousel-12:checked~.control-12~.carousel-indicators li:nth-child(12) .carousel-bullet{
-     color: #2b6cb0;
+  #carousel-12:checked~.control-12~.carousel-indicators li:nth-child(12) .carousel-bullet,
+  #carousel-13:checked~.control-13~.carousel-indicators li:nth-child(13) .carousel-bullet {
+    color: #2b6cb0;
     /*Set to match the Tailwind colour you want the active one to be */
   }
 
@@ -542,13 +544,21 @@
     background-size: contain;
 
   }
+
   #certificado-11 {
     background: url("./assets/certificados/11.jpg") no-repeat center;
     background-size: contain;
 
   }
+
   #certificado-12 {
     background: url("./assets/certificados/12.jpg") no-repeat center;
+    background-size: contain;
+
+  }
+
+  #certificado-13 {
+    background: url("./assets/certificados/13.jpg") no-repeat center;
     background-size: contain;
 
   }
