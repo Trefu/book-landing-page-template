@@ -930,10 +930,6 @@ li>a:hover::before {
   position: relative;
   z-index: 2;
   font-family: "Dancing Script";
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .poem-container>p:nth-child(2) {

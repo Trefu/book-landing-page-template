@@ -413,8 +413,6 @@
     position: relative;
     z-index: 2;
     font-family: "Dancing Script";
-    user-select: none;
-
   }
 
   .poem-container>p:nth-child(2) {
